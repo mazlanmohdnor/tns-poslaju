@@ -1,21 +1,42 @@
 <ActionBar class="action-bar">
-    <!-- 
+    <!--
     Use the NavigationButton as a side-drawer button in Android
     because ActionItems are shown on the right side of the ActionBar
     -->
-    <NavigationButton ios:visibility="collapsed" icon="res://menu" (tap)="onDrawerButtonTap()"></NavigationButton>
-    <!-- 
+    <NavigationButton (tap)="onDrawerButtonTap()" icon="res://menu" ios:visibility="collapsed"></NavigationButton>
+    <!--
     Use the ActionItem for IOS with position set to left. Using the
     NavigationButton as a side-drawer button in iOS is not possible,
     because its function is to always navigate back in the application.
     -->
-    <ActionItem icon="res://navigation/menu" android:visibility="collapsed" (tap)="onDrawerButtonTap()"
-        ios.position="left">
+    <ActionItem (tap)="onDrawerButtonTap()" android:visibility="collapsed" icon="res://navigation/menu"
+                ios.position="left">
     </ActionItem>
     <Label class="action-bar-title" text="Featured"></Label>
 </ActionBar>
 
 <GridLayout class="page page-content">
-    <Label class="page-icon fa" text="&#xf005;"></Label>
-    <Label class="page-placeholder" text="<!-- Page content goes here -->"></Label>
+
+    <StackLayout>
+        <StackLayout [elevation]="elevation"
+                     [pressedElevation]="elevation+5"
+                     bgcolor="white"
+                     cornerRadius="10"
+                     forcePressAnimation="true"
+                     margin="50 20 20 20"
+                     shadow>
+            <GridLayout columns="*" rows="auto, auto, auto">
+                <StackLayout col="0" margin="20" row="0">
+                    <Image borderRadius="100"
+                           height="100" src="https://brandmark.io/logo-rank/random/mcdonalds.png"
+                           stretch="aspectFill" width="100">
+                    </Image>
+                </StackLayout>
+                <Label class="my-label" col="0" horizontalAlignment="center" margin="20"
+                       row="1"
+                       text="Pos Laju Tracking is a free app to help users to track Pos Laju Parcel. This is NOT an Official Pos Laju Tracking Apps by Pos Laju Malaysia. But we develop it as a community project for Malaysian. Please refer to Pos Laju Malaysia for more information. Thank you."
+                       textWrap="true"></Label>
+            </GridLayout>
+        </StackLayout>
+    </StackLayout>
 </GridLayout>
