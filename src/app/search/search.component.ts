@@ -20,4 +20,8 @@ export class SearchComponent implements OnInit {
         const sideDrawer = <RadSideDrawer>app.getRootView();
         sideDrawer.showDrawer();
     }
+    
+    public onTap($event) {
+        
+    }
 }

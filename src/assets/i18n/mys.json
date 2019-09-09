@@ -1,0 +1,112 @@
+{
+  "MAIN_PAGE": {
+    "NO_DATA": "Tiada Rekod",
+    "DESCRIPTION": "Tekan butang + untuk menambah rekod.",
+    "COPIED": "Disalin.",
+    "DELETE": "Anda pasti untuk padam {{ value }}?",
+    "SEARCH": "No. Tracking atau Tajuk",
+    "COPY": "Salin",
+    "DELETE2": "Padam"
+  },
+  "SETTING_PAGE": {
+    "HEADER": "Tetapan",
+    "GOOD": "BAGUS",
+    "BAD": "TERGENDALA",
+    "NO_CONNECTION": "TIADA SAMBUNGAN 😟",
+    "BACKUP": "Backup Semua Tracking Number?",
+    "RESTORE": "Restore Nombor Tracking dari Backup?",
+    "OVERWRITE": "Ini akan  mengganti data semasa anda",
+    "DELETE": "Padam semua Tracking Number?",
+    "SELECT_ITEM": "Sila pilih item anda",
+    "BACKED_UP": "Tracking Number anda telah berjaya di Backup.",
+    "BACKUP_FAIL": "Ralat. Tracking Number tidak berjaya di Backup.",
+    "BACKUP_FILE_FAIL": "Ralat. Fail Backup tidak berjaya dicipta.",
+    "NO_BACKUP": "Tiada Backup ditemui. Pilih trackingNumbers.txt dari fail storan?",
+    "DATA_RESTORED": "Data berjaya di Restore!.",
+    "NO_DATA": "Tiada Data.",
+    "THEME": {
+      "RED": "Merah",
+      "BLUE": "Biru"
+    },
+    "VIEW": {
+      "GENERAL": "Umum",
+      "SERVER": "Status Server",
+      "LANG": "Bahasa",
+      "THEME": "Tema",
+      "BACKUP_DATA": "Backup Data",
+      "RESTORE_DATA": "Restore Data",
+      "CLEAR_DATA": "Buang Data",
+      "CONTACT": "Hubungi",
+      "CONTACT_POS": "Hubungi Pos Laju",
+      "CONTACT_DEV": "Hubungi Developer",
+      "ABOUT": "Tentang",
+      "GOOGLE_SIGNUP": "Daftar dengan Google"
+    }
+  },
+  "SIDE_PAGE": {
+    "SHARE": "Pos Laju Tracking adalah applikasi percuma untuk membantu anda melihat status barang pos anda. Muat turun sekarang di Google Play Store",
+    "VIA": "'Kongsi melalui...",
+    "MENU": {
+      "SETTING": "Tetapan",
+      "DISCUSSION": "Diskusi 👨‍💻",
+      "SHARE": "Kongsi App",
+      "RATE": "5 Bintang 🌟",
+      "MORE": "Apps Lain"
+    }
+  },
+  "SCAN_PAGE": {
+    "TITLE": "Tambah bungkusan.",
+    "SAVED": "Nombor Tracking Disimpan 👍.",
+    "CATEGORY": "Pilih Kategori",
+    "CATEGORY_DESC": {
+      "Basket": "Bakul",
+      "Tool": "Peralatan",
+      "Beverages": "Minuman",
+      "Gift": "Hadiah",
+      "Electronics": "Elektronik",
+      "Letter": "Surat",
+      "Cloth": "Pakaian"
+    },
+    "CATEGORY_SELECTED": "{{ value }} dipilih.",
+    "TN": "Nombor Tracking",
+    "TC": "Tajuk dan Kategori",
+    "SAVE": "Simpan",
+    "TRACK": "Jejak"
+  },
+  "ABOUT_PAGE": {
+    "HEADER": "Info",
+    "DESC": "Pos Laju Tracking adalah aplikasi percuma untuk membantu pengguna menjejak barangan. Ini bukanlah applikasi rasmi Pos Laju tetapi kami membangunkannya sebagai projek komuniti untuk rakyat Malaysia. Sila rujuk Pos Laju Malaysia untuk maklumat lanjut. Terima kasih."
+  },
+  "GLOBAL": {
+    "TITLE": "Pos Laju Tracking",
+    "EXIT": "Keluar",
+    "EXIT_DESC": "Anda pasti untuk keluar?",
+    "DELIVERED": "Diterima",
+    "CANCEL": "Batal",
+    "YES": "Ya",
+    "NO": "Tidak",
+    "OK": "Okay",
+    "LOADING": "Memuat..",
+    "NO_RECORD": "Tiada Rekod.",
+    "CHOOSE": "Sila Pilih",
+    "BACK": "Kembali"
+  },
+  "ERROR": {
+    "err204": {
+      "errTitle": "Maaf, tiada rekod dijumpai.",
+      "errMsg": "Item anda mungkin belum diproses, sila cuba lagi nanti."
+    },
+    "err504": {
+      "errTitle": "Maaf, penggunaan server terlampau tinggi.",
+      "errMsg": "Sila cuba sekali lagi."
+    },
+    "err503": {
+      "errTitle": "Masa sambungan telah tamat.",
+      "errMsg": "Sila semak sambungan internet anda."
+    },
+    "err403": {
+      "errTitle": "Data telah wujud.",
+      "errMsg": "Nombor Tracking sudah wujud, sila semak semula nombor Tracking anda."
+    }
+  }
+}

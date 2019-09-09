@@ -1,0 +1,112 @@
+{
+  "MAIN_PAGE": {
+    "NO_DATA": "No shipping record",
+    "DESCRIPTION": "Tap on the + symbol to get started or pull down to refresh.",
+    "COPIED": "Copied to clipboard",
+    "DELETE": "Are your sure want to delete {{ value }}?",
+    "SEARCH": "Tracking No. or Title",
+    "COPY": "Copy",
+    "DELETE2": "Delete"
+  },
+  "SETTING_PAGE": {
+    "HEADER": "Setting",
+    "GOOD": "GOOD",
+    "BAD": "BAD",
+    "NO_CONNECTION": "NO CONNECTION 😟",
+    "BACKUP": "Backup All Tracking Numbers?",
+    "RESTORE": "Restore Tracking Numbers from backup?",
+    "OVERWRITE": "This will overwrite your current data.",
+    "DELETE": "Delete All Tracking Numbers?",
+    "SELECT_ITEM": "Please select your item",
+    "BACKED_UP": "Your tracking Number have been backed up.",
+    "BACKUP_FAIL": "Error. Cannot Backup Tracking Number.",
+    "BACKUP_FILE_FAIL": "Error. Cannot create backup file.",
+    "NO_BACKUP": "No backup found. Choose trackingNumbers.txt from file explorer?",
+    "DATA_RESTORED": "Data restored successfully!.",
+    "NO_DATA": "No Data.",
+    "THEME": {
+      "RED": "Red",
+      "BLUE": "Blue"
+    },
+    "VIEW": {
+      "GENERAL": "General",
+      "SERVER": "Server Status",
+      "LANG": "Language",
+      "THEME": "Theme",
+      "BACKUP_DATA": "Backup Data",
+      "RESTORE_DATA": "Restore Data",
+      "CLEAR_DATA": "Clear Data",
+      "CONTACT": "Contact",
+      "CONTACT_POS": "Contact Pos Laju",
+      "CONTACT_DEV": "Contact Developer",
+      "ABOUT": "About",
+      "GOOGLE_SIGNUP": "Sign up with Google"
+    }
+  },
+  "SIDE_PAGE": {
+    "SHARE": "Pos Laju Tracking is a free app to help users to track Pos Laju Parcel. Download now at Google Play Store",
+    "VIA": "'Share via...",
+    "MENU": {
+      "SETTING": "Setting",
+      "DISCUSSION": "Discussion 👨‍💻",
+      "SHARE": "Share App",
+      "RATE": "Rate 5 Star 🌟",
+      "MORE": "More Apps"
+    }
+  },
+  "SCAN_PAGE": {
+    "TITLE": "Add Shipment",
+    "SAVED": "Tracking Number Saved 👍",
+    "CATEGORY": "Choose Category",
+    "CATEGORY_DESC": {
+      "Basket": "Basket",
+      "Tool": "Tool",
+      "Beverages": "Beverages",
+      "Gift": "Gift",
+      "Electronics": "Electronics",
+      "Letter": "Letter",
+      "Cloth": "Cloth"
+    },
+    "CATEGORY_SELECTED": "{{ value }} selected.",
+    "TN": "Tracking Number",
+    "TC": "Title and Category",
+    "SAVE": "Save",
+    "TRACK": "Track"
+  },
+  "ABOUT_PAGE": {
+    "HEADER": "About",
+    "DESC": "Pos Laju Tracking is a free app to help users to track Pos Laju Parcel. This is NOT an Official Pos Laju Tracking Apps by Pos Laju Malaysia. But we develop it as a community project for Malaysian. Please refer to Pos Laju Malaysia for more information. Thank you."
+  },
+  "GLOBAL": {
+    "TITLE": "Pos Laju Tracking",
+    "EXIT": "Exit",
+    "EXIT_DESC": "Are you sure want to exit?",
+    "DELIVERED": "Delivered",
+    "CANCEL": "Cancel",
+    "NO": "NO",
+    "YES": "Yes",
+    "OK": "Okay",
+    "LOADING": "Loading..",
+    "NO_RECORD": "No record.",
+    "CHOOSE": "Please choose",
+    "BACK": "Back"
+  },
+  "ERROR": {
+    "err204": {
+      "errTitle": "Sorry, no record found.",
+      "errMsg": "Your item might not be process yet, please try again later."
+    },
+    "err504": {
+      "errTitle": "Sorry, Server usage is too high.",
+      "errMsg": "Please try again later."
+    },
+    "err503": {
+      "errTitle": "Connection Timeout.",
+      "errMsg": "Please check your internet connection."
+    },
+    "err403": {
+      "errTitle": "Data Exist.",
+      "errMsg": "Tracking Number already exist, please check your tracking number again."
+    }
+  }
+}
