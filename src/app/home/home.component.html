@@ -1,0 +1,32 @@
+<ActionBar class="action-bar">
+    <!--
+    Use the NavigationButton as a side-drawer button in Android
+    because ActionItems are shown on the right side of the ActionBar
+    -->
+    <NavigationButton ios:visibility="collapsed" icon="res://menu" (tap)="onDrawerButtonTap()"></NavigationButton>
+    <!--
+    Use the ActionItem for IOS with position set to left. Using the
+    NavigationButton as a side-drawer button in iOS is not possible,
+    because its function is to always navigate back in the application.
+    -->
+    <ActionItem icon="res://navigation/menu" android:visibility="collapsed" (tap)="onDrawerButtonTap()"
+        ios.position="left">
+    </ActionItem>
+    <Label class="action-bar-title" text="Home"></Label>
+</ActionBar>
+
+<GridLayout rows="*, auto" columns="*" class="page">
+    <StackLayout row="0" col="0">
+        <Button class="h3 m-15 p-10 ex1" [text]="'shadow=\''+elevation+'\''" [shadow]="elevation" (tap)="toggleClass()"></Button>
+        <Label [class]="'h3 m-15 p-10 ' + bclass" [text]="'shadow elevation=\''+elevation+'\''" shadow [elevation]="elevation" [pressedElevation]="elevation + 5" [forcePressAnimation]="true" (tap)="dummy()"></Label>
+        <Label [class]="'h3 m-15 p-10 ' + bclass2" [text]="'shadow [elevation]=\''+elevation+'\' bgcolor=\'#006968\' [shape]=\'shape.RECTANGLE\' corderRadius=15'" shadow [elevation]="elevation" bgcolor="#006968" [shape]="shape.RECTANGLE" cornerRadius="15"></Label>
+        <Label [class]="'h1 m-15 p-15 ' + bclass3" text="☺" [shadow]="androidData" [forcePressAnimation]="true" (tap)="dummy()"></Label>
+        <Label class="h3 m-15 lbl5" [text]="'{ elevation: '+elevation+', bgcolor: \'#ff1744\', shape: shape.OVAL }'"></Label>
+    </StackLayout>
+    <ListPicker row="1" col="0" [items]="stdElevations" selectedIndex="2" (selectedIndexChange)="setElevation($event)" class="p-15"></ListPicker>
+</GridLayout>
+
+<StackLayout>
+    <Image src="https://brandmark.io/logo-rank/random/mcdonalds.png"
+           stretch="aspectFill" height="150" width="150" borderRadius="100"></Image>
+</StackLayout>
