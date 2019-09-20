@@ -1,0 +1,24 @@
+<ListView
+        (itemTap)="onTap($event)"
+        [items]="options"
+        class="list-group"
+        height="200"
+        separatorColor="white"
+>
+    <ng-template let-option="item">
+        <GridLayout columns="auto, *">
+            <Label
+                    [text]="option.icon"
+                    class="list-group-item fas"
+                    col="0"
+                    fontSize="18"
+            ></Label>
+            <Label
+                    [text]="option.text"
+                    class="list-group-item"
+                    col="1"
+            ></Label>
+        </GridLayout>
+
+    </ng-template>
+</ListView>

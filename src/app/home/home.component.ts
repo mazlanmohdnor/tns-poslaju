@@ -1,7 +1,9 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit, ViewContainerRef } from "@angular/core";
 import { BarcodeScanner, ScanOptions } from "nativescript-barcodescanner";
+import { BottomSheetOptions, BottomSheetService } from "nativescript-material-bottomsheet/angular";
 import { RadSideDrawer } from "nativescript-ui-sidedrawer";
 import * as app from "tns-core-modules/application";
+import { SheetComponent } from "~/app/home/bottom-sheet/sheet.component";
 
 @Component({
     selector: "Home",
@@ -18,7 +20,10 @@ import * as app from "tns-core-modules/application";
 export class HomeComponent implements OnInit {
     public trackingNumber: string;
     
-    constructor() {
+    constructor(
+        private bottomSheet: BottomSheetService,
+        private containerRef: ViewContainerRef
+    ) {
     }
     
     ngOnInit(): void {
@@ -30,7 +35,7 @@ export class HomeComponent implements OnInit {
         sideDrawer.showDrawer();
     }
     
-    public onTap(event) {
+    public onTapCamera(event) {
         console.log("OPEN NOTIFICATION!");
         const scanOptions: ScanOptions = {
             formats: "QR_CODE, EAN_13, CODE_39, CODE_128, CODE_39_MOD_43",
@@ -61,5 +66,17 @@ export class HomeComponent implements OnInit {
                 console.log("No scan. " + errorMessage);
             }
         );
+    }
+    
+    public onTapCategory($event) {
+        const options: BottomSheetOptions = {
+            viewContainerRef: this.containerRef,
+            context: [{ icon: "\uf466", text: "Facebook" }, { icon: "b", text: "Google" }, { icon: "c", text: "ASAS" }]
+        };
+        
+        this.bottomSheet.show(SheetComponent, options).subscribe(result => {
+            console.log("Option selected:", result);
+        });
+        
     }
 }
