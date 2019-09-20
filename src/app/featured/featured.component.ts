@@ -25,7 +25,8 @@ import * as app from "tns-core-modules/application";
 })
 export class FeaturedComponent implements OnInit {
     elevation = Elevation.FAB_RESTING;
-    
+    text: string = "Pos Laju Tracking is sssa free app to help users to track Pos Laju Parcel. This is NOT an Official Pos Laju Tracking Apps by Pos Laju Malaysia. But we develop it as a community project for Malaysian. Please refer to Pos Laju Malaysia for more information. Thank you.";
+   
     constructor() {
         // Use the component constructor to inject providers.
     }
