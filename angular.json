@@ -6,12 +6,11 @@
     "defaultCollection": "@nativescript/schematics"
   },
   "projects": {
-    "drawer-navigation": {
+    "pos-tracking": {
       "root": "",
       "sourceRoot": "src",
-      "projectType": "application",
-      "prefix": "ns"
+      "projectType": "application"
     }
   },
-  "defaultProject": "drawer-navigation"
+  "defaultProject": "pos-tracking"
 }

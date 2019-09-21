@@ -12,7 +12,8 @@
   "license": "SEE LICENSE IN <your-license-filename>",
   "repository": "<fill-your-repository-here>",
   "scripts": {
-    "lint": "tslint \"src/**/*.ts\""
+    "lint": "tslint \"src/**/*.ts\"",
+    "dev": "tns run android --env.aot --env.uglify --env.verbose"
   },
   "dependencies": {
     "@angular/animations": "~8.2.0",
@@ -28,6 +29,7 @@
     "nativescript-material-bottomsheet": "^2.3.24",
     "nativescript-material-button": "^2.3.23",
     "nativescript-material-components": "^1.2.1",
+    "nativescript-ng-ripple": "^2.0.1",
     "nativescript-ngx-shadow": "^6.5.0",
     "nativescript-theme-core": "~1.0.6",
     "nativescript-ui-sidedrawer": "~7.0.0",

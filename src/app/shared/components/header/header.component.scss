@@ -1,0 +1,36 @@
+
+ion-header {
+  background: var(--ion-bgcolor) !important;
+}
+
+.header-card {
+  position: relative;
+  padding-top: 2em;
+  padding-bottom: 1.5em;
+  background: var(--ion-color-primary);
+  box-shadow: var(--ion-color-primary-shadow);
+
+  h2 {
+    color: var(--font-button-color) !important;
+    font-weight: bold;
+    font-size: 1.5em;
+    padding-bottom: 0.625rem;
+  }
+}
+
+.header-img {
+  height: 6em;
+  width: 6em;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer-text {
+  bottom: 42px;
+  background-color: var(--ion-color-light);
+  margin: 0 auto !important;
+  font-size: 0.8em;
+  box-shadow: 0 5px 16px 5px rgba(0, 0, 0, 0.12);
+}

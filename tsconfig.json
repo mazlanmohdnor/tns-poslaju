@@ -19,6 +19,24 @@
             ],
             "*": [
                 "./node_modules/*"
+            ],
+            "@interfaces/*": [
+                "app/interfaces/*"
+            ],
+            "@services/*": [
+                "app/shared/services/*"
+            ],
+            "@pipes/*": [
+                "app/shared/pipes/*"
+            ],
+            "@directives/*": [
+                "app/shared/directives/*"
+            ],
+            "@components/*": [
+                "app/shared/components/*"
+            ],
+            "@constants/*": [
+                "app/constants/*"
             ]
         }
     },

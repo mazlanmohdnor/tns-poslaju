@@ -1,63 +1,6 @@
 <RadSideDrawer transition="PushTransition">
     <GridLayout class="sidedrawer sidedrawer-left" rows="auto, *" tkDrawerContent>
-
-        <StackLayout height="300">
-            <StackLayout [elevation]="elevation"
-                         bgcolor="#3E6FD5"
-                         forcePressAnimation="true"
-                         [pressedElevation]="elevation+5"
-                         cornerRadius="10"
-                         height="200" margin="50 20 20 20"
-                         shadow>
-                <GridLayout columns="*" rows="auto, auto, auto">
-                    <StackLayout col="0" margin="20" row="0">
-                        <Image borderRadius="100"
-                               height="100" src="~/assets/org.jpg"
-                               stretch="aspectFill" width="100">
-                        </Image>
-                    </StackLayout>
-                    <Label col="0" color="white" fontSize="20" horizontalAlignment="center" row="1"
-                           text="Pos Tracking 2"></Label>
-                </GridLayout>
-            </StackLayout>
-        </StackLayout>
-
-        <ScrollView class="sidedrawer-content" row="1">
-            <StackLayout>
-                <GridLayout (tap)="onNavItemTap('/home')" [class.selected]="isComponentSelected('/home')"
-                            class="sidedrawer-list-item" columns="auto, *">
-                    <Label class="fa" col="0" text="&#xf015;"></Label>
-                    <Label class="p-r-10" col="1" text="Home"></Label>
-                </GridLayout>
-
-                <GridLayout (tap)="onNavItemTap('/browse')" [class.selected]="isComponentSelected('/browse')"
-                            class="sidedrawer-list-item" columns="auto, *">
-                    <Label class="fa" col="0" text="&#xf1ea;"></Label>
-                    <Label class="p-r-10" col="1" text="Browse"></Label>
-                </GridLayout>
-
-                <GridLayout (tap)="onNavItemTap('/search')" [class.selected]="isComponentSelected('/search')"
-                            class="sidedrawer-list-item" columns="auto, *">
-                    <Label class="fa" col="0" text="&#xf002;"></Label>
-                    <Label class="p-r-10" col="1" text="Search"></Label>
-                </GridLayout>
-
-                <GridLayout (tap)="onNavItemTap('/featured')" [class.selected]="isComponentSelected('/featured')"
-                            class="sidedrawer-list-item" columns="auto, *">
-                    <Label class="fa" col="0" text="&#xf005;"></Label>
-                    <Label class="p-r-10" col="1" text="Featured"></Label>
-                </GridLayout>
-
-                <StackLayout class="hr-light"></StackLayout>
-
-                <GridLayout (tap)="onNavItemTap('/settings')" [class.selected]="isComponentSelected('/settings')"
-                            class="sidedrawer-list-item" columns="auto, *">
-                    <Label class="fa" col="0" text="&#xf013;"></Label>
-                    <Label class="p-r-10" col="1" text="Settings"></Label>
-                </GridLayout>
-            </StackLayout>
-        </ScrollView>
+        <side-menu></side-menu>
     </GridLayout>
-
     <page-router-outlet class="page page-content" tkMainContent></page-router-outlet>
 </RadSideDrawer>

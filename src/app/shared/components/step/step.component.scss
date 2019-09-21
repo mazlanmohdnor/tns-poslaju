@@ -1,0 +1,46 @@
+.events li {
+  display: flex;
+}
+
+.events time {
+  position: relative;
+  padding-top: 0;
+  padding-right: 1.5em;
+  padding-bottom: 0;
+}
+
+.events time::after {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  top: 0;
+  transform: translateX(50%);
+  border-radius: 50%;
+  background: var(--ion-color-success);
+  //border: 1px #f6515f solid;
+  width: .8em;
+  height: .8em;
+  left: -17px;
+}
+
+
+.events span {
+  //padding  : 0 1.5em 1.5em 1.5em;
+  position: relative;
+  width: 90%;
+  left: -10px;
+}
+
+.events span::before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  height: 122%;
+  border-left: 3px #cccccc5c dashed;
+  left: -20px;
+}
+
+.events strong {
+  display: block;
+}
