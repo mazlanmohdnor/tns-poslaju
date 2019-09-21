@@ -1,21 +1,33 @@
-<ActionBar class="action-bar">
-    <!--
-    Use the NavigationButton as a side-drawer button in Android
-    because ActionItems are shown on the right side of the ActionBar
-    -->
-    <NavigationButton ios:visibility="collapsed" icon="res://menu" (tap)="onDrawerButtonTap()"></NavigationButton>
-    <!--
-    Use the ActionItem for IOS with position set to left. Using the
-    NavigationButton as a side-drawer button in iOS is not possible,
-    because its function is to always navigate back in the application.
-    -->
-    <ActionItem icon="res://navigation/menu" android:visibility="collapsed" (tap)="onDrawerButtonTap()"
-        ios.position="left">
+<ActionBar class="action-bar" flat="true">
+    <NavigationButton (tap)="onDrawerButtonTap()" icon="res://menu" ios:visibility="collapsed"></NavigationButton>
+    <ActionItem (tap)="onDrawerButtonTap()" android:visibility="collapsed" icon="res://navigation/menu"
+                ios.position="left">
     </ActionItem>
-    <Label class="action-bar-title" text="Main"></Label>
+    <Label class="action-bar-title" text="Pos Tracking"></Label>
 </ActionBar>
 
-<GridLayout class="page page-content">
-    <Label class="page-icon fa" text="&#xf1ea;"></Label>
-    <Label class="page-placeholder" text="<!-- Page content goes here -->"></Label>
+<GridLayout class="page page-content" rows="auto, *">
+
+    <StackLayout backgroundColor="#3E6FD5" row="0">
+        <StackLayout backgroundColor="white" borderRadius="15" height="40" margin="10">
+            <SearchBar (loaded)="searchBarLoaded($event)" (submit)="onSubmit($event)" (textChange)="onTextChange($event)" backgroundColor="white" hint="Search" margin="10"
+                       row="0"></SearchBar>
+        </StackLayout>
+    </StackLayout>
+
+
+    <GridLayout row="1" tkExampleTitle tkToggleNavButton>
+        <RadListView (itemDeselected)="onItemDeselected($event)" (itemDeselecting)="onItemDeselecting($event)" (itemReordered)="onItemReordered($event)"
+                     (itemSelected)="onItemSelected($event)" (itemSelecting)="onItemSelecting($event)"
+                     (pullToRefreshInitiated)="onPullToRefreshInitiated($event)" [items]="_dataItems" itemReorder="true" pullToRefresh="true" selectionBehavior="Press"
+        >
+            <ng-template let-item="item" tkListItemTemplate>
+                <StackLayout margin="10" orientation="vertical">
+                    <Label [text]="item.name" class="nameLabel"></Label>
+                    <Label [text]="item.description" class="descriptionLabel"></Label>
+                </StackLayout>
+            </ng-template>
+        </RadListView>
+    </GridLayout>
+
 </GridLayout>

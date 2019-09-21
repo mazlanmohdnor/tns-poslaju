@@ -1,8 +1,7 @@
 import { Component, OnInit, ViewContainerRef } from "@angular/core";
+import { RouterExtensions } from "nativescript-angular";
 import { BarcodeScanner, ScanOptions } from "nativescript-barcodescanner";
 import { BottomSheetOptions, BottomSheetService } from "nativescript-material-bottomsheet/angular";
-import { RadSideDrawer } from "nativescript-ui-sidedrawer";
-import * as app from "tns-core-modules/application";
 import { SheetComponent } from "~/app/pages/scan/bottom-sheet/sheet.component";
 
 @Component({
@@ -12,9 +11,7 @@ import { SheetComponent } from "~/app/pages/scan/bottom-sheet/sheet.component";
         .input-custom {
             color: #444;
             margin: 15 5 0 5;
-
         }
-
     `]
 })
 export class ScanComponent implements OnInit {
@@ -22,7 +19,8 @@ export class ScanComponent implements OnInit {
     
     constructor(
         private bottomSheet: BottomSheetService,
-        private containerRef: ViewContainerRef
+        private containerRef: ViewContainerRef,
+        private routerExtensions: RouterExtensions
     ) {
     }
     
@@ -30,10 +28,10 @@ export class ScanComponent implements OnInit {
     
     }
     
-    onDrawerButtonTap(): void {
-        const sideDrawer = <RadSideDrawer>app.getRootView();
-        sideDrawer.showDrawer();
-    }
+    // onDrawerButtonTap(): void {
+    //     const sideDrawer = <RadSideDrawer>app.getRootView();
+    //     sideDrawer.showDrawer();
+    // }
     
     public onTapCamera(event) {
         console.log("OPEN NOTIFICATION!");
@@ -82,5 +80,9 @@ export class ScanComponent implements OnInit {
     
     public onTapTrack($event) {
     
+    }
+    
+    goBack(): void {
+        this.routerExtensions.back();
     }
 }

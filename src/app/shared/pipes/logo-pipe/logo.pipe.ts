@@ -1,5 +1,5 @@
 import { Pipe, PipeTransform } from "@angular/core";
-import { PosType } from "~/app/type/pos.type";
+import { PosType } from "~/app/constants/pos.type";
 
 @Pipe({
     name: "logoPipe"

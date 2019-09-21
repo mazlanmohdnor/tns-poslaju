@@ -1,9 +1,8 @@
 <ActionBar class="action-bar">
-    <NavigationButton (tap)="onDrawerButtonTap()" icon="res://menu" ios:visibility="collapsed"></NavigationButton>
-    <ActionItem (tap)="onDrawerButtonTap()" android:visibility="collapsed" icon="res://navigation/menu"
-                ios.position="left">
-    </ActionItem>
-    <Label class="action-bar-title" text="Home"></Label>
+    <Label class="action-bar-title" text="Scan"></Label>
+
+    <NavigationButton (tap)="goBack()" android.systemIcon="ic_menu_back" text="Go Back"></NavigationButton>
+
 </ActionBar>
 
 

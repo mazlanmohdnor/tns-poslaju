@@ -1,21 +1,9 @@
 <ActionBar class="action-bar">
-    <!--
-    Use the NavigationButton as a side-drawer button in Android
-    because ActionItems are shown on the right side of the ActionBar
-    -->
-    <NavigationButton (tap)="onDrawerButtonTap()" icon="res://menu" ios:visibility="collapsed"></NavigationButton>
-    <!--
-    Use the ActionItem for IOS with position set to left. Using the
-    NavigationButton as a side-drawer button in iOS is not possible,
-    because its function is to always navigate back in the application.
-    -->
-    <ActionItem (tap)="onDrawerButtonTap()" android:visibility="collapsed" icon="res://navigation/menu"
-                ios.position="left">
-    </ActionItem>
+    <NavigationButton (tap)="goBack()" android.systemIcon="ic_menu_back" text="Go Back"></NavigationButton>
+
     <Label class="action-bar-title" text="Notification"></Label>
 </ActionBar>
 
 <GridLayout class="page page-content">
     <Label class="page-icon fa" text="&#xf1ea;"></Label>
-    <Label class="page-placeholder" text="<!-- Page content goes here -->"></Label>
 </GridLayout>

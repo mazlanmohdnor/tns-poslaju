@@ -1,4 +1,4 @@
-import { PosType } from "~/app/type/pos.type";
+import { PosType } from "~/app/constants/pos.type";
 
 export interface IDisplayItem {
     title: string;
