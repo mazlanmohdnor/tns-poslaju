@@ -1,8 +1,6 @@
-<ActionBar class="action-bar">
+<ActionBar class="action-bar" flat="true">
     <Label class="action-bar-title" text="Scan"></Label>
-
     <NavigationButton (tap)="goBack()" android.systemIcon="ic_menu_back" text="Go Back"></NavigationButton>
-
 </ActionBar>
 
 
@@ -36,11 +34,11 @@
                     <Label class="fas" fontSize="18" text="&#xf029;"></Label>
                 </StackLayout>
 
-                <TextField col="1"
+                <TextField [(ngModel)]="trackingNumber"
+                           col="1"
                            hint="Tracking Number.."
                            marginLeft="10"
                            marginRight="10"
-                           [(ngModel)]="trackingNumber"
                 ></TextField>
 
                 <StackLayout (tap)="onTapCamera($event)" col="2" marginRight="10" ripple verticalAlignment="center">
@@ -57,9 +55,9 @@
 
                 <TextField [(ngModel)]="trackingNumber"
                            col="1"
+                           hint="Title or Category.."
                            marginLeft="10"
                            marginRight="10"
-                           hint="Title or Category.."
                 ></TextField>
 
                 <StackLayout (tap)="onTapCategory($event)" col="2" marginRight="10" ripple verticalAlignment="center">
@@ -69,13 +67,12 @@
             </GridLayout>
 
 
-            <StackLayout col="0" height="50" marginRight="3" marginTop="20" row="3">
-                <Button class="btn-rounded-lg btn-primary" ripple text="Save"></Button>
-
+            <StackLayout col="0" height="60" marginRight="3" marginTop="20" row="3">
+                <Button (tap)="onTapSave($event)" class="btn-rounded-lg btn-primary" height="40" ripple text="Save"></Button>
             </StackLayout>
 
-            <StackLayout col="1" height="50" marginLeft="3" marginTop="20" row="3">
-                <Button (tap)="onTapTrack($event)" class="btn-rounded-lg btn-primary" ripple text="Track"></Button>
+            <StackLayout col="1" height="60" marginLeft="3" marginTop="20" row="3">
+                <Button (tap)="onTapTrack($event)" class="btn-rounded-lg btn-primary" height="40" ripple text="Track"></Button>
             </StackLayout>
 
 

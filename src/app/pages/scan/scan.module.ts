@@ -2,6 +2,7 @@ import { NgModule, NO_ERRORS_SCHEMA } from "@angular/core";
 import { Routes } from "@angular/router";
 import { NativeScriptFormsModule, NativeScriptRouterModule } from "nativescript-angular";
 import { NativeScriptCommonModule } from "nativescript-angular/common";
+import { NativeScriptHttpClientModule } from "nativescript-angular/http-client";
 import { BarcodeScanner } from "nativescript-barcodescanner";
 import { NgRippleModule } from "nativescript-ng-ripple";
 import { NgShadowModule } from "nativescript-ngx-shadow";
@@ -18,7 +19,8 @@ const routes: Routes = [
         NativeScriptRouterModule.forChild(routes),
         NgShadowModule,
         NativeScriptFormsModule,
-        NgRippleModule
+        NgRippleModule,
+        NativeScriptHttpClientModule
     ],
     declarations: [
         ScanComponent,

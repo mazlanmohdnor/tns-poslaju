@@ -3,6 +3,7 @@ import { Routes } from "@angular/router";
 import { NativeScriptRouterModule } from "nativescript-angular";
 import { NativeScriptCommonModule } from "nativescript-angular/common";
 import { ProgressComponent } from "~/app/pages/progress/progress.component";
+import { ScanModule } from "~/app/pages/scan/scan.module";
 
 const routes: Routes = [
     { path: "", component: ProgressComponent }
@@ -11,7 +12,8 @@ const routes: Routes = [
 @NgModule({
     imports: [
         NativeScriptCommonModule,
-        NativeScriptRouterModule.forChild(routes)
+        NativeScriptRouterModule.forChild(routes),
+        ScanModule
     ],
     declarations: [
         ProgressComponent

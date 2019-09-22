@@ -3,10 +3,12 @@ import { RouterExtensions } from "nativescript-angular";
 import { BarcodeScanner, ScanOptions } from "nativescript-barcodescanner";
 import { BottomSheetOptions, BottomSheetService } from "nativescript-material-bottomsheet/angular";
 import { SheetComponent } from "~/app/pages/scan/bottom-sheet/sheet.component";
+import { PosLajuService } from "~/app/shared/services/pos-backend/pos-laju.service";
 
 @Component({
-    selector: "Home",
+    selector: "scan",
     templateUrl: "./scan.component.html",
+    providers: [PosLajuService],
     styles: [`
         .input-custom {
             color: #444;
@@ -15,12 +17,13 @@ import { SheetComponent } from "~/app/pages/scan/bottom-sheet/sheet.component";
     `]
 })
 export class ScanComponent implements OnInit {
-    public trackingNumber: string;
+    public trackingNumber: string = "308000505679";
     
     constructor(
         private bottomSheet: BottomSheetService,
         private containerRef: ViewContainerRef,
-        private routerExtensions: RouterExtensions
+        private routerExtensions: RouterExtensions,
+        private posService: PosLajuService
     ) {
     }
     
@@ -28,12 +31,7 @@ export class ScanComponent implements OnInit {
     
     }
     
-    // onDrawerButtonTap(): void {
-    //     const sideDrawer = <RadSideDrawer>app.getRootView();
-    //     sideDrawer.showDrawer();
-    // }
-    
-    public onTapCamera(event) {
+    public onTapCamera() {
         console.log("OPEN NOTIFICATION!");
         const scanOptions: ScanOptions = {
             formats: "QR_CODE, EAN_13, CODE_39, CODE_128, CODE_39_MOD_43",
@@ -79,10 +77,16 @@ export class ScanComponent implements OnInit {
     }
     
     public onTapTrack($event) {
-    
+        this.posService.getDetailBrowser(this.trackingNumber).subscribe(result => {
+            console.log("result :", result);
+        });
     }
     
     goBack(): void {
         this.routerExtensions.back();
+    }
+    
+    public onTapSave($event) {
+    
     }
 }

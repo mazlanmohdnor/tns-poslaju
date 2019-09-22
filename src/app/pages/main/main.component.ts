@@ -1,12 +1,17 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, ElementRef, OnInit, ViewChild } from "@angular/core";
 import { Router } from "@angular/router";
 import { RouterExtensions } from "nativescript-angular";
 import { ListViewEventData, RadListView } from "nativescript-ui-listview";
 import { RadSideDrawer } from "nativescript-ui-sidedrawer";
 import * as app from "tns-core-modules/application";
 import { ObservableArray } from "tns-core-modules/data/observable-array";
-import { isAndroid } from "tns-core-modules/platform";
+import { View } from "tns-core-modules/ui/core/view";
 import { SearchBar } from "tns-core-modules/ui/search-bar";
+// import { registerElement } from 'nativescript-angular/element-registry';
+// registerElement(
+//     'Fab',
+//     () => require('@nstudio/nativescript-floatingactionbutton').Fab
+// );
 
 export class DataItem {
     constructor(public id?: number,
@@ -353,25 +358,31 @@ export const DATAITEMS: DataItem[] = [
 @Component({
     selector: "Browse",
     templateUrl: "./main.component.html",
-    styles: [`
-    
-    `]
+    styleUrls: ["./main.component.scss"]
 })
 export class MainComponent implements OnInit {
     _dataItems: ObservableArray<DataItem>;
     private _selectedItems: string;
+    @ViewChild("btnFabRef", { static: false }) btnFab: ElementRef;
+    @ViewChild("AbsoluteLayoutRef", { static: false }) absoluteLayoutRef: ElementRef;
     
     constructor(
-        private router: Router, private routerExtensions: RouterExtensions
-    ) {
-        // Use the component constructor to inject providers.
+        private router: Router,
+        private routerExtensions: RouterExtensions
+    ) {}
+    
+    setFabPosition(args) {
+        setTimeout(() => {
+            const stackSize = args.object.getActualSize();
+            const btnFab = this.btnFab.nativeElement as View;
+            btnFab.top = stackSize.height - 90;
+            btnFab.left = stackSize.width - 90;
+        });
     }
     
     ngOnInit(): void {
-        setTimeout(() => {
-            this._dataItems = new ObservableArray(DATAITEMS);
-        
-        }, 3000);
+        this._dataItems = new ObservableArray(DATAITEMS);
+       
     }
     
     onDrawerButtonTap(): void {
@@ -395,11 +406,10 @@ export class MainComponent implements OnInit {
     
     }
     
+    //
     public searchBarLoaded(args) {
-        var searchbar: SearchBar = args.object;
-        if (isAndroid) {
-            searchbar.android.clearFocus();
-        }
+        const searchBar: SearchBar = args.object;
+        searchBar.android.clearFocus();
     }
     
     public onPullToRefreshInitiated(args) {
@@ -428,59 +438,20 @@ export class MainComponent implements OnInit {
         this._selectedItems = selectedTitles;
         const selectedItem = this._dataItems.getItem(args.index);
         console.log("Item selected: " + (selectedItem && selectedItem.name));
+    
+        this.routerExtensions.navigate(["/progress"], {
+            transition: {
+                name: "slideLeft"
+            }
+        });
     }
     
-    public onItemSelecting(args: ListViewEventData) {
-        const listview = args.object as RadListView;
-        const selectedItems = listview.getSelectedItems() as Array<DataItem>;
-        let selectedTitles = "Selecting item: ";
-        for (let i = 0; i < selectedItems.length; i++) {
-            selectedTitles += selectedItems[i] ? selectedItems[i].name : "";
-            
-            if (i < selectedItems.length - 1) {
-                selectedTitles += ", ";
+    onTapFab() {
+        this.routerExtensions.navigate(["/scan"], {
+            transition: {
+                name: "slideLeft"
             }
-        }
-        
-        const selectedItem = this._dataItems.getItem(args.index);
-        console.log("Item selecting: " + (selectedItem && selectedItem.name));
+        });
     }
     
-    public onItemDeselecting(args: ListViewEventData) {
-        const listview = args.object as RadListView;
-        const selectedItems = listview.getSelectedItems() as Array<DataItem>;
-        let selectedTitles = "Deselecting item: ";
-        for (let i = 0; i < selectedItems.length; i++) {
-            selectedTitles += selectedItems[i] ? selectedItems[i].name : "";
-            
-            if (i < selectedItems.length - 1) {
-                selectedTitles += ", ";
-            }
-        }
-        
-        const selectedItem = this._dataItems.getItem(args.index);
-        console.log("Item deselecting: " + (selectedItem && selectedItem.name));
-    }
-    
-    public onItemDeselected(args: ListViewEventData) {
-        const listview = args.object as RadListView;
-        const selectedItems = listview.getSelectedItems() as Array<DataItem>;
-        if (selectedItems.length > 0) {
-            let selectedTitles = "Selected items: ";
-            for (let i = 0; i < selectedItems.length; i++) {
-                selectedTitles += selectedItems[i] ? selectedItems[i].name : "";
-                
-                if (i < selectedItems.length - 1) {
-                    selectedTitles += ", ";
-                }
-            }
-            
-            this._selectedItems = selectedTitles;
-        } else {
-            this._selectedItems = "No Selected items.";
-        }
-        
-        const deselectedItem = this._dataItems.getItem(args.index);
-        console.log("Item deselected: " + (deselectedItem && deselectedItem.name));
-    }
 }

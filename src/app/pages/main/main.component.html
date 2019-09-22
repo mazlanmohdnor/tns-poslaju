@@ -9,25 +9,53 @@
 <GridLayout class="page page-content" rows="auto, *">
 
     <StackLayout backgroundColor="#3E6FD5" row="0">
-        <StackLayout backgroundColor="white" borderRadius="15" height="40" margin="10">
-            <SearchBar (loaded)="searchBarLoaded($event)" (submit)="onSubmit($event)" (textChange)="onTextChange($event)" backgroundColor="white" hint="Search" margin="10"
-                       row="0"></SearchBar>
+        <StackLayout class="search-stack">
+            <SearchBar
+                    (loaded)="searchBarLoaded($event)"
+                    (submit)="onSubmit($event)"
+                    (textChange)="onTextChange($event)"
+                    class="search"
+                    hint="Search"
+                    row="0">
+            </SearchBar>
         </StackLayout>
     </StackLayout>
 
+    <AbsoluteLayout #AbsoluteLayoutRef (loaded)="setFabPosition($event)" row="1">
+        <RadListView
+                (itemReordered)="onItemReordered($event)"
+                (itemSelected)="onItemSelected($event)"
+                (pullToRefreshInitiated)="onPullToRefreshInitiated($event)"
+                [items]="_dataItems"
+                itemReorder="true"
+                pullToRefresh="true"
+                selectionBehavior="Press">
 
-    <GridLayout row="1" tkExampleTitle tkToggleNavButton>
-        <RadListView (itemDeselected)="onItemDeselected($event)" (itemDeselecting)="onItemDeselecting($event)" (itemReordered)="onItemReordered($event)"
-                     (itemSelected)="onItemSelected($event)" (itemSelecting)="onItemSelecting($event)"
-                     (pullToRefreshInitiated)="onPullToRefreshInitiated($event)" [items]="_dataItems" itemReorder="true" pullToRefresh="true" selectionBehavior="Press"
-        >
             <ng-template let-item="item" tkListItemTemplate>
-                <StackLayout margin="10" orientation="vertical">
-                    <Label [text]="item.name" class="nameLabel"></Label>
-                    <Label [text]="item.description" class="descriptionLabel"></Label>
+                <StackLayout class="item-stack" orientation="vertical" ripple shadow>
+                    <Label [text]="item.name" class="labelTitle"></Label>
+                    <Label [text]="item.description" class="labelText"></Label>
                 </StackLayout>
             </ng-template>
+
         </RadListView>
-    </GridLayout>
+
+
+        <GridLayout #btnFabRef>
+            <Button
+                    (tap)="onTapFab()"
+                    class="fas"
+                    horizontalAlignment="center"
+                    id="btnFab"
+                    ripple
+                    shadow="6"
+                    text="&#xf067;"
+                    verticalAlignment="center">
+            </Button>
+            <FAB (tap)="onTapFab()" class="fab-button" icon="'~/assets/org.jpg'" rippleColor="#f1f1f1"></FAB>
+
+        </GridLayout>
+
+    </AbsoluteLayout>
 
 </GridLayout>
