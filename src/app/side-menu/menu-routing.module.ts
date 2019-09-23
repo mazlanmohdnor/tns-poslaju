@@ -54,8 +54,8 @@ const routes: Routes = [
         
     },
     {
-        path: "progress",
-        loadChildren: () => import("~/app/pages/progress/progress.module").then(m => m.ProgressModule)
+        path: "progress-detail",
+        loadChildren: () => import("~/app/pages/progress-detail/progress-detail.module").then(m => m.ProgressDetailModule)
         // data: { preload: true, delay: false }
     }
     // {

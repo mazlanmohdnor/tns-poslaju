@@ -1,0 +1,6 @@
+<ActionBar class="action-bar" flat="true">
+    <Label class="action-bar-title" text="Progress"></Label>
+    <NavigationButton (tap)="goBack()" android.systemIcon="ic_menu_back" text="Go Back"></NavigationButton>
+</ActionBar>
+
+<Label [text]="(route$ | async).name"></Label>

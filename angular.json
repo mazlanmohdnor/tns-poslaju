@@ -9,7 +9,8 @@
     "pos-tracking": {
       "root": "",
       "sourceRoot": "src",
-      "projectType": "application"
+      "projectType": "application",
+      "prefix": "ns"
     }
   },
   "defaultProject": "pos-tracking"

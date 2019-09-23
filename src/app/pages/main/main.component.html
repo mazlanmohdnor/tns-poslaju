@@ -20,11 +20,12 @@
             </SearchBar>
         </StackLayout>
     </StackLayout>
+    <!--    (itemSelected)="onItemSelected($event)"-->
 
     <AbsoluteLayout #AbsoluteLayoutRef (loaded)="setFabPosition($event)" row="1">
         <RadListView
                 (itemReordered)="onItemReordered($event)"
-                (itemSelected)="onItemSelected($event)"
+                (itemSelected)="onItemSelectedq($event)"
                 (pullToRefreshInitiated)="onPullToRefreshInitiated($event)"
                 [items]="_dataItems"
                 itemReorder="true"
@@ -32,7 +33,7 @@
                 selectionBehavior="Press">
 
             <ng-template let-item="item" tkListItemTemplate>
-                <StackLayout class="item-stack" orientation="vertical" ripple shadow>
+                <StackLayout (tap)="onItemSelected(item)" class="item-stack" orientation="vertical" ripple shadow>
                     <Label [text]="item.name" class="labelTitle"></Label>
                     <Label [text]="item.description" class="labelText"></Label>
                 </StackLayout>

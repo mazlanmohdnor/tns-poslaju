@@ -362,9 +362,9 @@ export const DATAITEMS: DataItem[] = [
 })
 export class MainComponent implements OnInit {
     _dataItems: ObservableArray<DataItem>;
-    private _selectedItems: string;
     @ViewChild("btnFabRef", { static: false }) btnFab: ElementRef;
     @ViewChild("AbsoluteLayoutRef", { static: false }) absoluteLayoutRef: ElementRef;
+    private _selectedItems: string;
     
     constructor(
         private router: Router,
@@ -382,7 +382,7 @@ export class MainComponent implements OnInit {
     
     ngOnInit(): void {
         this._dataItems = new ObservableArray(DATAITEMS);
-       
+    
     }
     
     onDrawerButtonTap(): void {
@@ -423,26 +423,14 @@ export class MainComponent implements OnInit {
         console.log("Item reordered. Old index: " + args.index + " " + "new index: " + args.data.targetIndex);
     }
     
-    public onItemSelected(args: ListViewEventData) {
-        const listview = args.object as RadListView;
-        const selectedItems = listview.getSelectedItems() as Array<DataItem>;
-        let selectedTitles = "Selected items: ";
-        for (let i = 0; i < selectedItems.length; i++) {
-            selectedTitles += selectedItems[i] ? selectedItems[i].name : "";
-            
-            if (i < selectedItems.length - 1) {
-                selectedTitles += ", ";
-            }
-        }
+    public onItemSelected(args: any) {
+        console.log("args :", args);
         
-        this._selectedItems = selectedTitles;
-        const selectedItem = this._dataItems.getItem(args.index);
-        console.log("Item selected: " + (selectedItem && selectedItem.name));
-    
-        this.routerExtensions.navigate(["/progress"], {
+        this.routerExtensions.navigate(["/progress-detail"], {
             transition: {
                 name: "slideLeft"
-            }
+            },
+            queryParams: args
         });
     }
     
@@ -454,4 +442,7 @@ export class MainComponent implements OnInit {
         });
     }
     
+    public onItemSelectedq($event) {
+    
+    }
 }
