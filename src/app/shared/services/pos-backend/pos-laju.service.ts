@@ -114,7 +114,8 @@ export class PosLajuService {
             ninjavan: "http://postpost.wittydata.com/api/ninjavan/",
             abx: "http://postpost.wittydata.com/api/abx/",
             dhl: "https://www.logistics.dhl/utapi?trackingNumber=",
-            cj: "http://cj-api.herokuapp.com/cj/"
+            // cj: "http://cj-api.herokuapp.com/cj/"
+            cj: "/api/"
         };
         const url = PosLajuService.chooseApi(type, a, trackingNum);
         console.log("url :", url);

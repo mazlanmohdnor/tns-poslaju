@@ -12,7 +12,10 @@ export class MediaType {
     
     public static APPLICATION_JSON = "application/json";
     public static APPLICATION_JSON_HEADER = new HttpHeaders({ "Content-Type": MediaType.APPLICATION_JSON });
-    public static APPLICATION_JSON_VALUE = { headers: MediaType.APPLICATION_JSON_HEADER };
+    public static APPLICATION_JSON_VALUE = {
+        headers: MediaType.APPLICATION_JSON_HEADER,
+        "Access-Control-Allow-Origin": "*"
+    };
     
     public static APPLICATION_JSON_UTF8 = MediaType.APPLICATION_JSON + ";charset=UTF-8";
     public static APPLICATION_JSON_UTF8_HEADER = new HttpHeaders({ "Content-Type": MediaType.APPLICATION_JSON_UTF8 });

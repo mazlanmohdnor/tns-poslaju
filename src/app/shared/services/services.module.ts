@@ -1,4 +1,5 @@
 import { ModuleWithProviders, NgModule } from "@angular/core";
+import { NativeScriptHttpClientModule } from "nativescript-angular/http-client";
 import { PosLajuService } from "~/app/shared/services/pos-backend/pos-laju.service";
 // import { DataProcessService } from "~/app/shared/services/data-process/data-process.service";
 
@@ -17,7 +18,9 @@ const PROVIDERS = [
 ];
 
 @NgModule({
-    imports: [],
+    imports: [
+        NativeScriptHttpClientModule
+    ],
     declarations: [],
     exports: [],
     providers: []

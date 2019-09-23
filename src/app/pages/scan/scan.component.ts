@@ -2,6 +2,7 @@ import { Component, OnInit, ViewContainerRef } from "@angular/core";
 import { RouterExtensions } from "nativescript-angular";
 import { BarcodeScanner, ScanOptions } from "nativescript-barcodescanner";
 import { BottomSheetOptions, BottomSheetService } from "nativescript-material-bottomsheet/angular";
+import { getJSON } from "tns-core-modules/http";
 import { SheetComponent } from "~/app/pages/scan/bottom-sheet/sheet.component";
 import { PosLajuService } from "~/app/shared/services/pos-backend/pos-laju.service";
 
@@ -17,7 +18,7 @@ import { PosLajuService } from "~/app/shared/services/pos-backend/pos-laju.servi
     `]
 })
 export class ScanComponent implements OnInit {
-    public trackingNumber: string = "308000505679";
+    public trackingNumber: string = "308000505679"; // 8050169956
     
     constructor(
         private bottomSheet: BottomSheetService,
@@ -77,8 +78,13 @@ export class ScanComponent implements OnInit {
     }
     
     public onTapTrack($event) {
-        this.posService.getDetailBrowser(this.trackingNumber).subscribe(result => {
-            console.log("result :", result);
+        // this.posService.getDetailBrowser(this.trackingNumber).subscribe(result => {
+        //     console.log("result :", result);
+        // });
+        getJSON("http://cj-api.herokuapp.com/cj/308000505679").then((r: any) => {
+            console.log("r :", r);
+        }, (e) => {
+            console.log("e :", e);
         });
     }
     
