@@ -20,16 +20,16 @@
             </SearchBar>
         </StackLayout>
     </StackLayout>
-    <!--    (itemSelected)="onItemSelected($event)"-->
 
-    <AbsoluteLayout #AbsoluteLayoutRef (loaded)="setFabPosition($event)" row="1">
+    <GridLayout row="1" rows="*">
+
         <RadListView
                 (itemReordered)="onItemReordered($event)"
-                (itemSelected)="onItemSelectedq($event)"
                 (pullToRefreshInitiated)="onPullToRefreshInitiated($event)"
                 [items]="_dataItems"
                 itemReorder="true"
                 pullToRefresh="true"
+                row="0"
                 selectionBehavior="Press">
 
             <ng-template let-item="item" tkListItemTemplate>
@@ -41,22 +41,13 @@
 
         </RadListView>
 
+    </GridLayout>
 
-        <GridLayout #btnFabRef>
-            <Button
-                    (tap)="onTapFab()"
-                    class="fas"
-                    horizontalAlignment="center"
-                    id="btnFab"
-                    ripple
-                    shadow="6"
-                    text="&#xf067;"
-                    verticalAlignment="center">
-            </Button>
-            <FAB (tap)="onTapFab()" class="fab-button" icon="'~/assets/org.jpg'" rippleColor="#f1f1f1"></FAB>
-
-        </GridLayout>
-
-    </AbsoluteLayout>
+    <FAB (tap)="onTapFab()"
+         class="fas fab-button"
+         rippleColor="#f1f1f1"
+         row="1"
+         text="&#xf067;"
+    ></FAB>
 
 </GridLayout>

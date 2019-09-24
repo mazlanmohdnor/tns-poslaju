@@ -1,17 +1,11 @@
-import { Component, ElementRef, OnInit, ViewChild } from "@angular/core";
+import { Component, OnInit } from "@angular/core";
 import { Router } from "@angular/router";
 import { RouterExtensions } from "nativescript-angular";
 import { ListViewEventData, RadListView } from "nativescript-ui-listview";
 import { RadSideDrawer } from "nativescript-ui-sidedrawer";
 import * as app from "tns-core-modules/application";
 import { ObservableArray } from "tns-core-modules/data/observable-array";
-import { View } from "tns-core-modules/ui/core/view";
 import { SearchBar } from "tns-core-modules/ui/search-bar";
-// import { registerElement } from 'nativescript-angular/element-registry';
-// registerElement(
-//     'Fab',
-//     () => require('@nstudio/nativescript-floatingactionbutton').Fab
-// );
 
 export class DataItem {
     constructor(public id?: number,
@@ -362,23 +356,11 @@ export const DATAITEMS: DataItem[] = [
 })
 export class MainComponent implements OnInit {
     _dataItems: ObservableArray<DataItem>;
-    @ViewChild("btnFabRef", { static: false }) btnFab: ElementRef;
-    @ViewChild("AbsoluteLayoutRef", { static: false }) absoluteLayoutRef: ElementRef;
-    private _selectedItems: string;
     
     constructor(
         private router: Router,
         private routerExtensions: RouterExtensions
     ) {}
-    
-    setFabPosition(args) {
-        setTimeout(() => {
-            const stackSize = args.object.getActualSize();
-            const btnFab = this.btnFab.nativeElement as View;
-            btnFab.top = stackSize.height - 90;
-            btnFab.left = stackSize.width - 90;
-        });
-    }
     
     ngOnInit(): void {
         this._dataItems = new ObservableArray(DATAITEMS);
@@ -406,7 +388,6 @@ export class MainComponent implements OnInit {
     
     }
     
-    //
     public searchBarLoaded(args) {
         const searchBar: SearchBar = args.object;
         searchBar.android.clearFocus();
@@ -442,7 +423,4 @@ export class MainComponent implements OnInit {
         });
     }
     
-    public onItemSelectedq($event) {
-    
-    }
 }
