@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "C:\\Users\\mazlan.nor\\Desktop\\nativescript\\tns-pos\\platforms\\tempPlugin\\nativescript_material_core\\build\\intermediates\\res\\merged\\release\\interpolator-v21\\mtrl_fast_out_linear_in.xml",
+        "source": "C:\\Users\\mazlan.nor\\.gradle\\caches\\transforms-2\\files-2.1\\69b16c10937394b2ee088a6fbf996098\\material-1.1.0-beta01\\res\\interpolator-v21\\mtrl_fast_out_linear_in.xml"
+    },
+    {
+        "merged": "C:\\Users\\mazlan.nor\\Desktop\\nativescript\\tns-pos\\platforms\\tempPlugin\\nativescript_material_core\\build\\intermediates\\res\\merged\\release\\interpolator-v21\\mtrl_linear_out_slow_in.xml",
+        "source": "C:\\Users\\mazlan.nor\\.gradle\\caches\\transforms-2\\files-2.1\\69b16c10937394b2ee088a6fbf996098\\material-1.1.0-beta01\\res\\interpolator-v21\\mtrl_linear_out_slow_in.xml"
+    },
+    {
+        "merged": "C:\\Users\\mazlan.nor\\Desktop\\nativescript\\tns-pos\\platforms\\tempPlugin\\nativescript_material_core\\build\\intermediates\\res\\merged\\release\\interpolator-v21\\mtrl_fast_out_slow_in.xml",
+        "source": "C:\\Users\\mazlan.nor\\.gradle\\caches\\transforms-2\\files-2.1\\69b16c10937394b2ee088a6fbf996098\\material-1.1.0-beta01\\res\\interpolator-v21\\mtrl_fast_out_slow_in.xml"
+    }
+]

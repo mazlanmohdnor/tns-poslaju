@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "C:\\Users\\mazlan.nor\\Desktop\\nativescript\\tns-pos\\platforms\\tempPlugin\\nativescript_material_core\\build\\intermediates\\res\\merged\\release\\anim-v21\\design_bottom_sheet_slide_out.xml",
+        "source": "C:\\Users\\mazlan.nor\\.gradle\\caches\\transforms-2\\files-2.1\\69b16c10937394b2ee088a6fbf996098\\material-1.1.0-beta01\\res\\anim-v21\\design_bottom_sheet_slide_out.xml"
+    },
+    {
+        "merged": "C:\\Users\\mazlan.nor\\Desktop\\nativescript\\tns-pos\\platforms\\tempPlugin\\nativescript_material_core\\build\\intermediates\\res\\merged\\release\\anim-v21\\design_bottom_sheet_slide_in.xml",
+        "source": "C:\\Users\\mazlan.nor\\.gradle\\caches\\transforms-2\\files-2.1\\69b16c10937394b2ee088a6fbf996098\\material-1.1.0-beta01\\res\\anim-v21\\design_bottom_sheet_slide_in.xml"
+    },
+    {
+        "merged": "C:\\Users\\mazlan.nor\\Desktop\\nativescript\\tns-pos\\platforms\\tempPlugin\\nativescript_material_core\\build\\intermediates\\res\\merged\\release\\anim-v21\\mtrl_bottom_sheet_slide_out.xml",
+        "source": "C:\\Users\\mazlan.nor\\.gradle\\caches\\transforms-2\\files-2.1\\69b16c10937394b2ee088a6fbf996098\\material-1.1.0-beta01\\res\\anim-v21\\mtrl_bottom_sheet_slide_out.xml"
+    },
+    {
+        "merged": "C:\\Users\\mazlan.nor\\Desktop\\nativescript\\tns-pos\\platforms\\tempPlugin\\nativescript_material_core\\build\\intermediates\\res\\merged\\release\\anim-v21\\mtrl_bottom_sheet_slide_in.xml",
+        "source": "C:\\Users\\mazlan.nor\\.gradle\\caches\\transforms-2\\files-2.1\\69b16c10937394b2ee088a6fbf996098\\material-1.1.0-beta01\\res\\anim-v21\\mtrl_bottom_sheet_slide_in.xml"
+    }
+]
