@@ -1,9 +1,0 @@
-R_DEF: Internal format may change without notice
-local
-id appbarLayout
-id contentLayout
-id coordinatorLayout
-layout material_page
-layout material_text_field
-layout material_text_field_filled
-layout material_text_field_outline

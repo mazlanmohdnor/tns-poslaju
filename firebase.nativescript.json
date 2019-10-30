@@ -12,10 +12,10 @@
     "in_app_messaging": false,
     "crashlytics": false,
     "storage": false,
-    "functions": true,
+    "functions": false,
     "facebook_auth": false,
-    "google_auth": true,
-    "admob": true,
+    "google_auth": false,
+    "admob": false,
     "dynamic_links": false,
     "ml_kit": false
 }

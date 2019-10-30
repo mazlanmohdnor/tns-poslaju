@@ -1,6 +1,8 @@
 import { Component, OnInit } from "@angular/core";
 import { Router } from "@angular/router";
 import { registerElement, RouterExtensions } from "nativescript-angular";
+import { firestore } from "nativescript-plugin-firebase";
+import * as firebase from "nativescript-plugin-firebase";
 import { ListViewEventData, RadListView } from "nativescript-ui-listview";
 import { RadSideDrawer } from "nativescript-ui-sidedrawer";
 import * as app from "tns-core-modules/application";
@@ -359,6 +361,7 @@ export const DATAITEMS: DataItem[] = [
 })
 export class MainComponent implements OnInit {
     _dataItems: ObservableArray<DataItem>;
+    url: any;
     
     constructor(
         private router: Router,
@@ -367,7 +370,24 @@ export class MainComponent implements OnInit {
     
     ngOnInit(): void {
         this._dataItems = new ObservableArray(DATAITEMS);
+        
+        firebase.init({});
+        this.initFirebase();
+    }
     
+    async initFirebase() {
+        try {
+            const apiCollection = firebase.firestore.collection("api");
+            apiCollection.get({ source: "server" }).then(querySnapshot => {
+                querySnapshot.forEach(doc => {
+                    const api: firestore.DocumentData = doc.data();
+                    this.url = JSON.parse(api.url);
+                    console.log("api :", JSON.parse(api.url));
+                });
+            });
+        } catch (err) {
+            console.log(">>>>> Firebase init error: " + err);
+        }
     }
     
     onDrawerButtonTap(): void {

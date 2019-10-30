@@ -1,7 +1,8 @@
 import { Component, OnInit } from "@angular/core";
 import * as storage from "nativescript-localstorage";
-
 // const firebase = require("nativescript-plugin-firebase");
+import * as firebase from "nativescript-plugin-firebase";
+import { firestore } from "nativescript-plugin-firebase";
 
 @Component({
     selector: "ns-app",
@@ -10,25 +11,40 @@ import * as storage from "nativescript-localstorage";
 export class AppComponent implements OnInit {
     
     constructor() {
+    
     }
     
-    async ngOnInit(): Promise<void> {
-        this.checkApi();
-        
-        // try {
-        //     await firebase.init({
-        //         persist: true,
-        //
-        //     });
-        //     console.log(">>>>> Firebase initialized");
-        // } catch (err) {
-        //     console.log(">>>>> Firebase init error: " + err);
-        // }
+    ngOnInit() {
+        console.log('asdad');
+        this.initFirebase();
+    
+    
+        // firebase.init({ persist: true })
+        //         .then(res => {
+        //             console.log("successss:", res);
+        //         })
+        //         .catch(err => {
+        //             console.log("error", err);
+        //         });
+    }
+    
+    async initFirebase() {
+        try {
+            const apiCollection = firebase.firestore.collection("api");
+            apiCollection.get({ source: "server" }).then(querySnapshot => {
+                querySnapshot.forEach(doc => {
+                    const api: firestore.DocumentData = doc.data();
+                    console.log("api :", JSON.parse(api.url));
+                });
+            });
+        } catch (err) {
+            console.log(">>>>> Firebase init error: " + err);
+        }
     }
     
     checkApi() {
         console.log("checking api");
-        let setItem = storage.setItem("api", JSON.stringify({
+        storage.setItem("api", JSON.stringify({
             "poslaju": "http://postpost.wittydata.com/api/poslaju/",
             "jnt": "http://postpost.wittydata.com/api/jnt/",
             "gdex": "http://postpost.wittydata.com/api/gdex/",
@@ -51,9 +67,8 @@ export class AppComponent implements OnInit {
             "zepto": "https://cj-api.herokuapp.com/zepto/",
             "pgeon": "https://cj-api.herokuapp.com/pgeon/"
         }));
-        console.log("setItem  :", setItem);
-        let getItem = storage.getItem("api");
-        console.log("api :", JSON.parse(getItem));
+        // let getItem = storage.getItem("api");
+        // console.log("api local:", JSON.parse(getItem));
         // if (!keys.includes('apiVersion')) {
         //     this.fireService$ = this.fireService.getApi().subscribe(data => {
         //         data.map(e => {
@@ -84,7 +99,6 @@ export class AppComponent implements OnInit {
         //         });
         //     });
         // }
-        
     }
     
 }

@@ -2,7 +2,7 @@
   "nativescript": {
     "id": "my.mazlan.poslajutracking",
     "tns-android": {
-      "version": "6.2.0-rc-2019-10-23-094316-01"
+      "version": "6.3.0-2019-10-22-105535-01"
     },
     "tns-ios": {
       "version": "6.1.1"
