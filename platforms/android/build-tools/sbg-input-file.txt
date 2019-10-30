@@ -1,0 +1,1 @@
+C:\Users\mazlan.nor\Desktop\nativescript\tns-pos\platforms\android\app/src/main/assets/app

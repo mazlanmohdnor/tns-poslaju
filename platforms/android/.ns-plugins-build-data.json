@@ -1,0 +1,58 @@
+{
+	"@nstudio/nativescript-floatingactionbutton": {
+		"C:\\Users\\mazlan.nor\\Desktop\\nativescript\\tns-pos\\node_modules\\@nstudio\\nativescript-floatingactionbutton\\platforms\\android\\include.gradle": "8c1fe5211f608e2cdeb32d726de040ca97d7e0f1"
+	},
+	"nativescript-barcodescanner": {
+		"C:\\Users\\mazlan.nor\\Desktop\\nativescript\\tns-pos\\node_modules\\nativescript-barcodescanner\\platforms\\android\\nativescript_barcodescanner.aar": "ce25561f898feb311b0f7c9f5c1bf0c62fe94ad4",
+		"C:\\Users\\mazlan.nor\\Desktop\\nativescript\\tns-pos\\node_modules\\nativescript-barcodescanner\\platforms\\android\\barcodescanner-release-2.1.6.aar": "03bb6a9683c3ee6b620304f321ea48e5de071ae3"
+	},
+	"nativescript-material-button": {
+		"C:\\Users\\mazlan.nor\\Desktop\\nativescript\\tns-pos\\node_modules\\nativescript-material-button\\platforms\\android\\include.gradle": "fce29a01d4e6f4aabcefb92850f1c40d4942a074",
+		"C:\\Users\\mazlan.nor\\Desktop\\nativescript\\tns-pos\\node_modules\\nativescript-material-button\\platforms\\android\\nativescript_material_button.aar": "a9c5193fa9cd8ea1028500cd19e2ca9769b94bd2",
+		"C:\\Users\\mazlan.nor\\Desktop\\nativescript\\tns-pos\\node_modules\\nativescript-material-button\\platforms\\android\\res\\layout\\material_button.xml": "3af1596c168b216b5554cce0a5785ecedda84fc1",
+		"C:\\Users\\mazlan.nor\\Desktop\\nativescript\\tns-pos\\node_modules\\nativescript-material-button\\platforms\\android\\res\\layout\\material_button_flat.xml": "416b334bc8a4c74dd2f85996c1fc29a7f3f7423d",
+		"C:\\Users\\mazlan.nor\\Desktop\\nativescript\\tns-pos\\node_modules\\nativescript-material-button\\platforms\\android\\res\\layout\\material_button_text.xml": "11f39271e457bdbe466454e6d2b321aa590c58df",
+		"C:\\Users\\mazlan.nor\\Desktop\\nativescript\\tns-pos\\node_modules\\nativescript-material-button\\platforms\\android\\res\\values\\materialbuttonstyles.xml": "36d663db053deb05f09f6105fe39c6e9760f18a3"
+	},
+	"nativescript-material-components": {
+		"C:\\Users\\mazlan.nor\\Desktop\\nativescript\\tns-pos\\node_modules\\nativescript-material-components\\platforms\\android\\AndroidManifest.xml": "a677edb5edbef3aa2b1a5b09c477968d26a35014",
+		"C:\\Users\\mazlan.nor\\Desktop\\nativescript\\tns-pos\\node_modules\\nativescript-material-components\\platforms\\android\\before-plugins.gradle": "7ca9e6a51bae4ec2b7117348a0905fd9b4d123d5",
+		"C:\\Users\\mazlan.nor\\Desktop\\nativescript\\tns-pos\\node_modules\\nativescript-material-components\\platforms\\android\\include.gradle": "dfe5eb013425f81244660501b46d5521e64edb40",
+		"C:\\Users\\mazlan.nor\\Desktop\\nativescript\\tns-pos\\node_modules\\nativescript-material-components\\platforms\\android\\nativescript_material_components.aar": "f2f85ea266d36d5f9aac2e4262a7f15462c42fa7",
+		"C:\\Users\\mazlan.nor\\Desktop\\nativescript\\tns-pos\\node_modules\\nativescript-material-components\\platforms\\android\\res\\layout\\material_page.xml": "1d4ed72604ae384e768323677647103d784b1245",
+		"C:\\Users\\mazlan.nor\\Desktop\\nativescript\\tns-pos\\node_modules\\nativescript-material-components\\platforms\\android\\res\\layout\\material_text_field.xml": "217a0d8de0b102f003b4e23b2679f90b6173f51e",
+		"C:\\Users\\mazlan.nor\\Desktop\\nativescript\\tns-pos\\node_modules\\nativescript-material-components\\platforms\\android\\res\\layout\\material_text_field_filled.xml": "415f53a7af971e9df92e5e93da74e76e018a70cf",
+		"C:\\Users\\mazlan.nor\\Desktop\\nativescript\\tns-pos\\node_modules\\nativescript-material-components\\platforms\\android\\res\\layout\\material_text_field_outline.xml": "6b7a43c644f6a76f937003a1dd11341706abc4e3"
+	},
+	"nativescript-ng-ripple": {
+		"C:\\Users\\mazlan.nor\\Desktop\\nativescript\\tns-pos\\node_modules\\nativescript-ng-ripple\\platforms\\android\\include.gradle": "b704a1c9686ee45ce5ef87ce779db19ee80dd316",
+		"C:\\Users\\mazlan.nor\\Desktop\\nativescript\\tns-pos\\node_modules\\nativescript-ng-ripple\\platforms\\android\\README.md": "0bc0739d397c2102751ff1350bd38db7128a03f2"
+	},
+	"nativescript-ui-listview": {
+		"C:\\Users\\mazlan.nor\\Desktop\\nativescript\\tns-pos\\node_modules\\nativescript-ui-listview\\platforms\\android\\include.gradle": "47ffe675113a982585b2386750b2d4305b66b6ca",
+		"C:\\Users\\mazlan.nor\\Desktop\\nativescript\\tns-pos\\node_modules\\nativescript-ui-listview\\platforms\\android\\typings\\listview.d.ts": "d3b76f21820076bdd93468055d6da69e9b41d98e",
+		"C:\\Users\\mazlan.nor\\Desktop\\nativescript\\tns-pos\\node_modules\\nativescript-ui-listview\\platforms\\android\\TNSListView-release.aar": "7d6beb6a454d6e59b38f1df1f2d33e86fb9d447f"
+	},
+	"nativescript-ui-sidedrawer": {
+		"C:\\Users\\mazlan.nor\\Desktop\\nativescript\\tns-pos\\node_modules\\nativescript-ui-sidedrawer\\platforms\\android\\TNSSideDrawer-release.aar": "e6e4d527ff85743c270768018b9ea720ec5b9dda",
+		"C:\\Users\\mazlan.nor\\Desktop\\nativescript\\tns-pos\\node_modules\\nativescript-ui-sidedrawer\\platforms\\android\\typings\\sidedrawer.d.ts": "8256a2295125597755fe6a6faee866b0750e65f2"
+	},
+	"nativescript-material-core": {
+		"C:\\Users\\mazlan.nor\\Desktop\\nativescript\\tns-pos\\node_modules\\nativescript-material-core\\platforms\\android\\include.gradle": "c99bbedaefb135514e46cc452ad051773e82ca1e",
+		"C:\\Users\\mazlan.nor\\Desktop\\nativescript\\tns-pos\\node_modules\\nativescript-material-core\\platforms\\android\\nativescript_material_core.aar": "fe0bec5b4bf9044bbbe9d5bb9fb8f99313c02740",
+		"C:\\Users\\mazlan.nor\\Desktop\\nativescript\\tns-pos\\node_modules\\nativescript-material-core\\platforms\\android\\res\\layout\\material_page.xml": "29f912255e893697d6abd438f67a854149136292"
+	},
+	"nativescript-ui-core": {
+		"C:\\Users\\mazlan.nor\\Desktop\\nativescript\\tns-pos\\node_modules\\nativescript-ui-core\\platforms\\android\\typings\\core.d.ts": "5c032652edfa1719ef8c8190fc0f66d3b1c313c2",
+		"C:\\Users\\mazlan.nor\\Desktop\\nativescript\\tns-pos\\node_modules\\nativescript-ui-core\\platforms\\android\\TNSCore-release.aar": "0e2fe0b867821ad56b8f0b9c8ac4c90f4c399e3c"
+	},
+	"tns-core-modules-widgets": {
+		"C:\\Users\\mazlan.nor\\Desktop\\nativescript\\tns-pos\\node_modules\\tns-core-modules-widgets\\platforms\\android\\widgets-release.aar": "0ff68ea2dea492d8ca6c2803f5700f1872126431"
+	},
+	"nativescript-plugin-firebase": {
+		"C:\\Users\\mazlan.nor\\Desktop\\nativescript\\tns-pos\\node_modules\\nativescript-plugin-firebase\\platforms\\android\\firebase-release.aar-disabled": "e1a0244835b078d3faab4fcd4e1cc50828d2a161",
+		"C:\\Users\\mazlan.nor\\Desktop\\nativescript\\tns-pos\\node_modules\\nativescript-plugin-firebase\\platforms\\android\\include.gradle": "b573e6e9ea5967f97c31c5e78a7a78aa040850fc",
+		"C:\\Users\\mazlan.nor\\Desktop\\nativescript\\tns-pos\\node_modules\\nativescript-plugin-firebase\\platforms\\android\\nativescript-firebase-mlkit-helper.jar-disabled": "d4ae4e5e19f9a7e46fc693eeb778883246c49d00",
+		"C:\\Users\\mazlan.nor\\Desktop\\nativescript\\tns-pos\\node_modules\\nativescript-plugin-firebase\\platforms\\android\\res\\raw\\beep.ogg": "1a522c83c9af8babf4b1aa83755ed93742a815c6"
+	}
+}
