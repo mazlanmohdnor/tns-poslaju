@@ -1,12 +1,15 @@
 import { Component, OnInit } from "@angular/core";
 import { Router } from "@angular/router";
-import { RouterExtensions } from "nativescript-angular";
+import { registerElement, RouterExtensions } from "nativescript-angular";
 import { ListViewEventData, RadListView } from "nativescript-ui-listview";
 import { RadSideDrawer } from "nativescript-ui-sidedrawer";
 import * as app from "tns-core-modules/application";
 import { ObservableArray } from "tns-core-modules/data/observable-array";
 import { SearchBar } from "tns-core-modules/ui/search-bar";
-
+registerElement(
+    "Fab",
+    () => require("@nstudio/nativescript-floatingactionbutton").Fab
+);
 export class DataItem {
     constructor(public id?: number,
                 public name?: string,
@@ -375,7 +378,8 @@ export class MainComponent implements OnInit {
     public scan() {
         this.routerExtensions.navigate(["/scan"], {
             transition: {
-                name: "slideLeft"
+                name: "slideLeft",
+                curve:'ease'
             }
         });
     }
@@ -409,7 +413,8 @@ export class MainComponent implements OnInit {
         
         this.routerExtensions.navigate(["/progress-detail"], {
             transition: {
-                name: "slideLeft"
+                name: "slideLeft",
+                curve:'ease'
             },
             queryParams: args
         });
@@ -418,7 +423,8 @@ export class MainComponent implements OnInit {
     onTapFab() {
         this.routerExtensions.navigate(["/scan"], {
             transition: {
-                name: "slideLeft"
+                name: "slideLeft",
+                curve:'ease'
             }
         });
     }

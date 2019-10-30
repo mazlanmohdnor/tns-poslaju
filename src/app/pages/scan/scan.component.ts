@@ -13,7 +13,7 @@ import { PosLajuService } from "~/app/shared/services/pos-backend/pos-laju.servi
     styles: [`
         .input-custom {
             color: #444;
-            margin: 15 5 0 5;
+            margin: 15 5 10 5;
         }
     `]
 })
@@ -32,7 +32,7 @@ export class ScanComponent implements OnInit {
     
     }
     
-    public onTapCamera() {
+    public onTapCamera(event) {
         console.log("OPEN NOTIFICATION!");
         const scanOptions: ScanOptions = {
             formats: "QR_CODE, EAN_13, CODE_39, CODE_128, CODE_39_MOD_43",
@@ -68,21 +68,45 @@ export class ScanComponent implements OnInit {
     public onTapCategory($event) {
         const options: BottomSheetOptions = {
             viewContainerRef: this.containerRef,
-            context: [{ icon: "\uf466", text: "Facebook" }, { icon: "b", text: "Google" }, { icon: "c", text: "ASAS" }]
+            context: [
+                {
+                    icon: "\uf466",
+                    text: "Facebook"
+                },
+                {
+                    icon: "b",
+                    text: "Google"
+                },
+                {
+                    icon: "c",
+                    text: "ASAS"
+                }
+            ]
         };
         
         this.bottomSheet.show(SheetComponent, options).subscribe(result => {
             console.log("Option selected:", result);
         });
-    
+        
     }
     
     public onTapTrack($event) {
-        // this.posService.getDetailBrowser(this.trackingNumber).subscribe(result => {
-        //     console.log("result :", result);
-        // });
-        getJSON("http://cj-api.herokuapp.com/cj/308000505679").then((r: any) => {
-            console.log("r :", r);
+        console.log("tap");
+        this.posService.getDetailBrowser(this.trackingNumber).subscribe(result => {
+            console.log("result :", result);
+        });
+        getJSON("http://cj-api.herokuapp.com/cj/308000505679").then((result: any) => {
+            console.log("result :", result);
+            this.routerExtensions.navigate(["/progress-detail"], {
+                transition: {
+                    name: "slideLeft",
+                    curve: "ease"
+                },
+                queryParams: {
+                    item: JSON.stringify(result)
+                }
+            });
+            
         }, (e) => {
             console.log("e :", e);
         });

@@ -7,22 +7,20 @@
 </ActionBar>
 
 <GridLayout class="page page-content" rows="auto, *">
-
-    <StackLayout backgroundColor="#3E6FD5" row="0">
+    <StackLayout backgroundColor="#3E6FD5" row="0" >
         <StackLayout class="search-stack">
             <SearchBar
                     (loaded)="searchBarLoaded($event)"
                     (submit)="onSubmit($event)"
                     (textChange)="onTextChange($event)"
                     class="search"
-                    hint="Search"
+                    hint="Search Anything"
                     row="0">
             </SearchBar>
         </StackLayout>
     </StackLayout>
 
     <GridLayout row="1" rows="*">
-
         <RadListView
                 (itemReordered)="onItemReordered($event)"
                 (pullToRefreshInitiated)="onPullToRefreshInitiated($event)"
@@ -38,16 +36,13 @@
                     <Label [text]="item.description" class="labelText"></Label>
                 </StackLayout>
             </ng-template>
-
         </RadListView>
-
     </GridLayout>
 
-    <FAB (tap)="onTapFab()"
-         class="fas fab-button"
-         rippleColor="#f1f1f1"
-         row="1"
-         text="&#xf067;"
-    ></FAB>
-
+        <FAB (tap)="onTapFab()"
+             row="1"
+             class="fas fab-button"
+             rippleColor="#f1f1f1"
+             text="&#xf067;"
+        ></FAB>
 </GridLayout>

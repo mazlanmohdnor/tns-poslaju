@@ -49,7 +49,7 @@ const routes: Routes = [
     },
     {
         path: "scan",
-        loadChildren: () => import("~/app/pages/scan/scan.module").then(m => m.ScanModule)
+        loadChildren: () => import("~/app/pages/scan/scan.module").then(m => m.ScanModule),
         // data: { preload: true, delay: false }
         
     },

@@ -3,4 +3,24 @@
     <NavigationButton (tap)="goBack()" android.systemIcon="ic_menu_back" text="Go Back"></NavigationButton>
 </ActionBar>
 
-<Label [text]="(route$ | async).name"></Label>
+<ListView [items]="items" (itemTap)="onItemTap($event)" class="list-group">
+    <ng-template let-item="item" let-i="index" let-odd="odd" let-even="even">
+        <!-- The item template can only have a single root view container (e.g. GridLayout, StackLayout, etc.)-->
+        <GridLayout rows="auto, auto, auto">
+            <Label row="0" [text]="item.date" class="list-group-item"></Label>
+            <Label row="1" [text]="item.status" class="list-group-item"></Label>
+            <Label row="2" [text]="item.location" class="list-group-item"></Label>
+        </GridLayout>
+    </ng-template>
+</ListView>
+
+<ListView [items]="items" class="list-group"
+          backgroundColor="red" separatorColor="blue">
+    <ng-template let-item="item">
+        <GridLayout rows="auto, auto, auto">
+            <Label row="0" color="white" [text]="item.date" class="list-group-item"></Label>
+            <Label row="1" color="white" [text]="item.status" class="list-group-item"></Label>
+            <Label row="2" color="white" [text]="item.location" class="list-group-item"></Label>
+        </GridLayout>
+    </ng-template>
+</ListView>

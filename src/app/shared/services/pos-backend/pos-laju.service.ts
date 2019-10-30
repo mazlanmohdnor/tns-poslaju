@@ -1,6 +1,7 @@
 import { HttpClient } from "@angular/common/http";
 import { Injectable } from "@angular/core";
 import { Observable } from "rxjs";
+import { getJSON } from "tns-core-modules/http";
 import { PosType } from "~/app/constants/pos.type";
 import { ApiObject } from "~/app/interfaces/api-object.interface";
 
@@ -48,7 +49,8 @@ export class PosLajuService {
         return url;
     }
     
-    getDetail(trackingNum, type: PosType = "poslaju") {
+    getDetail(trackingNum, type: PosType = "poslaju"): Promise<any> {
+        return getJSON("http://cj-api.herokuapp.com/cj/308000505679")
         // return new Promise(resolve => {
         //     this.storage.getItem("api").then(api => {
         //         console.log("api resolve, fetching tracking detail", api);
@@ -105,17 +107,28 @@ export class PosLajuService {
     
     getDetailBrowser(trackingNum: string, type: PosType = "cj"): Observable<any> {
         let a = {
-            poslaju: "http://postpost.wittydata.com/api/poslaju/",
-            gdex: "http://postpost.wittydata.com/api/gdex/",
-            jnt: "http://postpost.wittydata.com/api/jnt/",
-            skynet: "http://postpost.wittydata.com/api/skynet/",
-            citylink: "http://postpost.wittydata.com/api/citylink/",
-            lex: "http://postpost.wittydata.com/api/lex/",
-            ninjavan: "http://postpost.wittydata.com/api/ninjavan/",
-            abx: "http://postpost.wittydata.com/api/abx/",
-            dhl: "https://www.logistics.dhl/utapi?trackingNumber=",
-            // cj: "http://cj-api.herokuapp.com/cj/"
-            cj: "/api/"
+            "poslaju": "http://postpost.wittydata.com/api/poslaju/",
+            "jnt": "http://postpost.wittydata.com/api/jnt/",
+            "gdex": "http://postpost.wittydata.com/api/gdex/",
+            "ninjavan": "http://postpost.wittydata.com/api/ninjavan/",
+            "skynet": "http://postpost.wittydata.com/api/skynet/",
+            "airpak": "https://postpost.wittydata.com/api/airpak/",
+            "citylink": "http://postpost.wittydata.com/api/citylink/",
+            "abx": "http://postpost.wittydata.com/api/abx/",
+            "lwe": "https://postpost.wittydata.com/api/lwe/",
+            "lex": "http://postpost.wittydata.com/api/lex/",
+            "dhl": "http://postpost.wittydata.com/api/dhl/",
+            "lineclear": "https://postpost.wittydata.com/api/lineclear/",
+            "cj": "http://postpost.wittydata.com/api/cjcentury/",
+            "shopee": "https://shopeexpress.com.my/api/v2/fleet_order/tracking/search?sls_tracking_number=",
+            "tnt": "https://www.tnt.com/api/v3/shipment?con=",
+            //--
+            "fedex": "https://cj-api.herokuapp.com/fedex/",
+            "mypoz": "https://cj-api.herokuapp.com/mypoz/",
+            "taqbin": "https://cj-api.herokuapp.com/taqbin/",
+            "ups": "https://cj-api.herokuapp.com/ups/",
+            "zepto": "https://cj-api.herokuapp.com/zepto/",
+            "pgeon": "https://cj-api.herokuapp.com/pgeon/"
         };
         const url = PosLajuService.chooseApi(type, a, trackingNum);
         console.log("url :", url);
