@@ -83,4 +83,3 @@ C:\Users\mazlan.nor\Desktop\nativescript\tns-pos\platforms\android\app\build\exp
 C:\Users\mazlan.nor\Desktop\nativescript\tns-pos\platforms\android\app\build\exploded-dependencies\f37dda982fc1b77e52a6c5966a5374ce\classes.jar
 C:\Users\mazlan.nor\Desktop\nativescript\tns-pos\platforms\android\app\build\exploded-dependencies\f40e73503f0c49980ce16ea25208dd51\classes.jar
 C:\Users\mazlan.nor\Desktop\nativescript\tns-pos\platforms\android\app\build\exploded-dependencies\fdc8eb8b7ae9bb9238ea51cde8844368\classes.jar
-C:\Users\mazlan.nor\Desktop\nativescript\tns-pos\platforms\android\app\build\intermediates\javac\debug

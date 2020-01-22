@@ -6,7 +6,7 @@
     <Label class="action-bar-title" text="Pos Tracking"></Label>
 </ActionBar>
 
-<GridLayout class="page page-content" rows="auto, *">
+<GridLayout backgroundColor="#a9a9ac" rows="auto, *">
     <StackLayout backgroundColor="#3E6FD5" row="0" >
         <StackLayout class="search-stack">
             <SearchBar
@@ -19,18 +19,25 @@
             </SearchBar>
         </StackLayout>
     </StackLayout>
-c
-    <Label [text]="url | json"></Label>
+
+<!--    <ListView row="1" [items]="_dataItems2" class="list-group"-->
+<!--              backgroundColor="white"-->
+<!--              separatorColor="blue">-->
+<!--        <ng-template let-item="item">-->
+<!--            <GridLayout rows="auto, auto">-->
+<!--                <Label row="0" color="black" [text]="item.name" class="list-group-item"></Label>-->
+<!--                <Label row="1" color="black" [text]="item.description" class="list-group-item"></Label>-->
+<!--            </GridLayout>-->
+<!--        </ng-template>-->
+<!--    </ListView>-->
 
     <GridLayout row="1" rows="*">
         <RadListView
                 (itemReordered)="onItemReordered($event)"
                 (pullToRefreshInitiated)="onPullToRefreshInitiated($event)"
                 [items]="_dataItems"
-                itemReorder="true"
-                pullToRefresh="true"
-                row="0"
-                selectionBehavior="Press">
+                itemReorder="false"
+                pullToRefresh="true">
 
             <ng-template let-item="item" tkListItemTemplate>
                 <StackLayout (tap)="onItemSelected(item)" class="item-stack" orientation="vertical" ripple shadow>
@@ -48,3 +55,5 @@ c
              text="&#xf067;"
         ></FAB>
 </GridLayout>
+
+

@@ -11,25 +11,25 @@
 9-->C:\Users\mazlan.nor\Desktop\nativescript\tns-pos\platforms\android\app\src\main\AndroidManifest.xml
 10
 11    <supports-screens
-11-->C:\Users\mazlan.nor\Desktop\nativescript\tns-pos\platforms\android\app\src\main\AndroidManifest.xml:4:2-136
+11-->C:\Users\mazlan.nor\Desktop\nativescript\tns-pos\platforms\android\app\src\main\AndroidManifest.xml:4:5-139
 12        android:largeScreens="true"
-12-->C:\Users\mazlan.nor\Desktop\nativescript\tns-pos\platforms\android\app\src\main\AndroidManifest.xml:4:77-104
+12-->C:\Users\mazlan.nor\Desktop\nativescript\tns-pos\platforms\android\app\src\main\AndroidManifest.xml:4:80-107
 13        android:normalScreens="true"
-13-->C:\Users\mazlan.nor\Desktop\nativescript\tns-pos\platforms\android\app\src\main\AndroidManifest.xml:4:48-76
+13-->C:\Users\mazlan.nor\Desktop\nativescript\tns-pos\platforms\android\app\src\main\AndroidManifest.xml:4:51-79
 14        android:smallScreens="true"
-14-->C:\Users\mazlan.nor\Desktop\nativescript\tns-pos\platforms\android\app\src\main\AndroidManifest.xml:4:20-47
+14-->C:\Users\mazlan.nor\Desktop\nativescript\tns-pos\platforms\android\app\src\main\AndroidManifest.xml:4:23-50
 15        android:xlargeScreens="true" />
-15-->C:\Users\mazlan.nor\Desktop\nativescript\tns-pos\platforms\android\app\src\main\AndroidManifest.xml:4:105-133
+15-->C:\Users\mazlan.nor\Desktop\nativescript\tns-pos\platforms\android\app\src\main\AndroidManifest.xml:4:108-136
 16
-17    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-17-->C:\Users\mazlan.nor\Desktop\nativescript\tns-pos\platforms\android\app\src\main\AndroidManifest.xml:6:2-77
-17-->C:\Users\mazlan.nor\Desktop\nativescript\tns-pos\platforms\android\app\src\main\AndroidManifest.xml:6:19-74
-18    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-18-->C:\Users\mazlan.nor\Desktop\nativescript\tns-pos\platforms\android\app\src\main\AndroidManifest.xml:7:2-78
-18-->C:\Users\mazlan.nor\Desktop\nativescript\tns-pos\platforms\android\app\src\main\AndroidManifest.xml:7:19-75
-19    <uses-permission android:name="android.permission.INTERNET" />
-19-->C:\Users\mazlan.nor\Desktop\nativescript\tns-pos\platforms\android\app\src\main\AndroidManifest.xml:8:2-64
-19-->C:\Users\mazlan.nor\Desktop\nativescript\tns-pos\platforms\android\app\src\main\AndroidManifest.xml:8:19-61
+17    <uses-permission android:name="android.permission.INTERNET" />
+17-->C:\Users\mazlan.nor\Desktop\nativescript\tns-pos\platforms\android\app\src\main\AndroidManifest.xml:5:5-67
+17-->C:\Users\mazlan.nor\Desktop\nativescript\tns-pos\platforms\android\app\src\main\AndroidManifest.xml:5:22-64
+18    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+18-->C:\Users\mazlan.nor\Desktop\nativescript\tns-pos\platforms\android\app\src\main\AndroidManifest.xml:6:5-80
+18-->C:\Users\mazlan.nor\Desktop\nativescript\tns-pos\platforms\android\app\src\main\AndroidManifest.xml:6:22-77
+19    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+19-->C:\Users\mazlan.nor\Desktop\nativescript\tns-pos\platforms\android\app\src\main\AndroidManifest.xml:7:5-81
+19-->C:\Users\mazlan.nor\Desktop\nativescript\tns-pos\platforms\android\app\src\main\AndroidManifest.xml:7:22-78
 20    <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
 21    <!-- <uses-sdk android:minSdkVersion="14" /> -->
 22    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -50,149 +50,151 @@
 28-->[:nativescript_barcodescanner:] C:\Users\mazlan.nor\.gradle\caches\transforms-2\files-2.1\9f2c1480a59902dab3793402b0e6fa78\nativescript_barcodescanner\AndroidManifest.xml:14:9-33
 29
 30    <application
-30-->C:\Users\mazlan.nor\Desktop\nativescript\tns-pos\platforms\android\app\src\main\AndroidManifest.xml:10:2-22:16
+30-->C:\Users\mazlan.nor\Desktop\nativescript\tns-pos\platforms\android\app\src\main\AndroidManifest.xml:8:5-18:19
 31        android:name="com.tns.NativeScriptApplication"
-31-->C:\Users\mazlan.nor\Desktop\nativescript\tns-pos\platforms\android\app\src\main\AndroidManifest.xml:10:15-61
+31-->C:\Users\mazlan.nor\Desktop\nativescript\tns-pos\platforms\android\app\src\main\AndroidManifest.xml:8:18-64
 32        android:allowBackup="true"
-32-->C:\Users\mazlan.nor\Desktop\nativescript\tns-pos\platforms\android\app\src\main\AndroidManifest.xml:10:62-88
+32-->C:\Users\mazlan.nor\Desktop\nativescript\tns-pos\platforms\android\app\src\main\AndroidManifest.xml:8:65-91
 33        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 33-->[androidx.core:core:1.1.0] C:\Users\mazlan.nor\.gradle\caches\transforms-2\files-2.1\10a89afa29614a5594b8461759745682\core-1.1.0\AndroidManifest.xml:24:18-86
 34        android:debuggable="true"
-35        android:icon="@drawable/icon"
-35-->C:\Users\mazlan.nor\Desktop\nativescript\tns-pos\platforms\android\app\src\main\AndroidManifest.xml:10:89-118
-36        android:label="@string/app_name"
-36-->C:\Users\mazlan.nor\Desktop\nativescript\tns-pos\platforms\android\app\src\main\AndroidManifest.xml:10:119-151
-37        android:theme="@style/AppTheme"
-37-->C:\Users\mazlan.nor\Desktop\nativescript\tns-pos\platforms\android\app\src\main\AndroidManifest.xml:10:152-183
-38        android:usesCleartextTraffic="true" >
-38-->C:\Users\mazlan.nor\Desktop\nativescript\tns-pos\platforms\android\app\src\main\AndroidManifest.xml:10:184-219
-39        <meta-data
-39-->C:\Users\mazlan.nor\Desktop\nativescript\tns-pos\platforms\android\app\src\main\AndroidManifest.xml:11:3-128
-40            android:name="com.google.android.gms.ads.APPLICATION_ID"
-40-->C:\Users\mazlan.nor\Desktop\nativescript\tns-pos\platforms\android\app\src\main\AndroidManifest.xml:11:14-70
-41            android:value="ca-app-pub-8469816531943468/2647073559" />
-41-->C:\Users\mazlan.nor\Desktop\nativescript\tns-pos\platforms\android\app\src\main\AndroidManifest.xml:11:71-125
-42
-43        <activity
-43-->C:\Users\mazlan.nor\Desktop\nativescript\tns-pos\platforms\android\app\src\main\AndroidManifest.xml:12:3-20:14
-44            android:name="com.tns.NativeScriptActivity"
-44-->C:\Users\mazlan.nor\Desktop\nativescript\tns-pos\platforms\android\app\src\main\AndroidManifest.xml:12:13-56
-45            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|smallestScreenSize|screenLayout|locale|uiMode"
-45-->C:\Users\mazlan.nor\Desktop\nativescript\tns-pos\platforms\android\app\src\main\AndroidManifest.xml:12:103-219
-46            android:label="@string/title_activity_kimera"
-46-->C:\Users\mazlan.nor\Desktop\nativescript\tns-pos\platforms\android\app\src\main\AndroidManifest.xml:12:57-102
-47            android:theme="@style/LaunchScreenTheme" >
-47-->C:\Users\mazlan.nor\Desktop\nativescript\tns-pos\platforms\android\app\src\main\AndroidManifest.xml:12:220-260
-48            <meta-data
-48-->C:\Users\mazlan.nor\Desktop\nativescript\tns-pos\platforms\android\app\src\main\AndroidManifest.xml:14:4-87
-49                android:name="SET_THEME_ON_LAUNCH"
-49-->C:\Users\mazlan.nor\Desktop\nativescript\tns-pos\platforms\android\app\src\main\AndroidManifest.xml:14:15-49
-50                android:resource="@style/AppTheme" />
-50-->C:\Users\mazlan.nor\Desktop\nativescript\tns-pos\platforms\android\app\src\main\AndroidManifest.xml:14:50-84
-51
-52            <intent-filter>
-52-->C:\Users\mazlan.nor\Desktop\nativescript\tns-pos\platforms\android\app\src\main\AndroidManifest.xml:16:4-19:20
-53                <action android:name="android.intent.action.MAIN" />
-53-->C:\Users\mazlan.nor\Desktop\nativescript\tns-pos\platforms\android\app\src\main\AndroidManifest.xml:17:5-57
-53-->C:\Users\mazlan.nor\Desktop\nativescript\tns-pos\platforms\android\app\src\main\AndroidManifest.xml:17:13-54
-54
-55                <category android:name="android.intent.category.LAUNCHER" />
-55-->C:\Users\mazlan.nor\Desktop\nativescript\tns-pos\platforms\android\app\src\main\AndroidManifest.xml:18:5-65
-55-->C:\Users\mazlan.nor\Desktop\nativescript\tns-pos\platforms\android\app\src\main\AndroidManifest.xml:18:15-62
-56            </intent-filter>
-57        </activity>
-58        <activity android:name="com.tns.ErrorReportActivity" />
-58-->C:\Users\mazlan.nor\Desktop\nativescript\tns-pos\platforms\android\app\src\main\AndroidManifest.xml:21:3-58
-58-->C:\Users\mazlan.nor\Desktop\nativescript\tns-pos\platforms\android\app\src\main\AndroidManifest.xml:21:13-55
-59        <activity
-59-->[com.google.firebase:firebase-auth:19.0.0] C:\Users\mazlan.nor\.gradle\caches\transforms-2\files-2.1\d09c7bbb719d28d2660e26d346f5a700\firebase-auth-19.0.0\AndroidManifest.xml:24:9-31:50
-60            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
-60-->[com.google.firebase:firebase-auth:19.0.0] C:\Users\mazlan.nor\.gradle\caches\transforms-2\files-2.1\d09c7bbb719d28d2660e26d346f5a700\firebase-auth-19.0.0\AndroidManifest.xml:25:13-85
-61            android:excludeFromRecents="true"
-61-->[com.google.firebase:firebase-auth:19.0.0] C:\Users\mazlan.nor\.gradle\caches\transforms-2\files-2.1\d09c7bbb719d28d2660e26d346f5a700\firebase-auth-19.0.0\AndroidManifest.xml:26:13-46
-62            android:exported="true"
-62-->[com.google.firebase:firebase-auth:19.0.0] C:\Users\mazlan.nor\.gradle\caches\transforms-2\files-2.1\d09c7bbb719d28d2660e26d346f5a700\firebase-auth-19.0.0\AndroidManifest.xml:27:13-36
-63            android:launchMode="singleTask"
-63-->[com.google.firebase:firebase-auth:19.0.0] C:\Users\mazlan.nor\.gradle\caches\transforms-2\files-2.1\d09c7bbb719d28d2660e26d346f5a700\firebase-auth-19.0.0\AndroidManifest.xml:28:13-44
-64            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
-64-->[com.google.firebase:firebase-auth:19.0.0] C:\Users\mazlan.nor\.gradle\caches\transforms-2\files-2.1\d09c7bbb719d28d2660e26d346f5a700\firebase-auth-19.0.0\AndroidManifest.xml:29:13-102
-65            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-65-->[com.google.firebase:firebase-auth:19.0.0] C:\Users\mazlan.nor\.gradle\caches\transforms-2\files-2.1\d09c7bbb719d28d2660e26d346f5a700\firebase-auth-19.0.0\AndroidManifest.xml:30:13-72
-66
-67        <service
-67-->[com.google.firebase:firebase-auth:19.0.0] C:\Users\mazlan.nor\.gradle\caches\transforms-2\files-2.1\d09c7bbb719d28d2660e26d346f5a700\firebase-auth-19.0.0\AndroidManifest.xml:33:9-39:19
-68            android:name="com.google.firebase.components.ComponentDiscoveryService"
-68-->[com.google.firebase:firebase-auth:19.0.0] C:\Users\mazlan.nor\.gradle\caches\transforms-2\files-2.1\d09c7bbb719d28d2660e26d346f5a700\firebase-auth-19.0.0\AndroidManifest.xml:34:13-84
-69            android:directBootAware="true"
-69-->[com.google.firebase:firebase-common:19.1.0] C:\Users\mazlan.nor\.gradle\caches\transforms-2\files-2.1\a28e05924b86cd17d2fdaf21e1495f6d\firebase-common-19.1.0\AndroidManifest.xml:14:13-43
-70            android:exported="false" >
-70-->[com.google.firebase:firebase-auth:19.0.0] C:\Users\mazlan.nor\.gradle\caches\transforms-2\files-2.1\d09c7bbb719d28d2660e26d346f5a700\firebase-auth-19.0.0\AndroidManifest.xml:35:13-37
-71            <meta-data
-71-->[com.google.firebase:firebase-auth:19.0.0] C:\Users\mazlan.nor\.gradle\caches\transforms-2\files-2.1\d09c7bbb719d28d2660e26d346f5a700\firebase-auth-19.0.0\AndroidManifest.xml:36:13-38:85
-72                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
-72-->[com.google.firebase:firebase-auth:19.0.0] C:\Users\mazlan.nor\.gradle\caches\transforms-2\files-2.1\d09c7bbb719d28d2660e26d346f5a700\firebase-auth-19.0.0\AndroidManifest.xml:37:17-109
-73                android:value="com.google.firebase.components.ComponentRegistrar" />
-73-->[com.google.firebase:firebase-auth:19.0.0] C:\Users\mazlan.nor\.gradle\caches\transforms-2\files-2.1\d09c7bbb719d28d2660e26d346f5a700\firebase-auth-19.0.0\AndroidManifest.xml:38:17-82
-74            <meta-data
-74-->[com.google.firebase:firebase-firestore:21.1.1] C:\Users\mazlan.nor\.gradle\caches\transforms-2\files-2.1\254613f88fd5fee60f351a77a04392f3\jetified-firebase-firestore-21.1.1\AndroidManifest.xml:20:13-22:85
-75                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
-75-->[com.google.firebase:firebase-firestore:21.1.1] C:\Users\mazlan.nor\.gradle\caches\transforms-2\files-2.1\254613f88fd5fee60f351a77a04392f3\jetified-firebase-firestore-21.1.1\AndroidManifest.xml:21:17-111
-76                android:value="com.google.firebase.components.ComponentRegistrar" />
-76-->[com.google.firebase:firebase-firestore:21.1.1] C:\Users\mazlan.nor\.gradle\caches\transforms-2\files-2.1\254613f88fd5fee60f351a77a04392f3\jetified-firebase-firestore-21.1.1\AndroidManifest.xml:22:17-82
-77        </service>
-78
-79        <activity
-79-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\mazlan.nor\.gradle\caches\transforms-2\files-2.1\08507ac4b27fc40b830b69e0e2920c29\play-services-base-17.1.0\AndroidManifest.xml:23:9-26:75
-80            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-80-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\mazlan.nor\.gradle\caches\transforms-2\files-2.1\08507ac4b27fc40b830b69e0e2920c29\play-services-base-17.1.0\AndroidManifest.xml:24:13-79
-81            android:exported="false"
-81-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\mazlan.nor\.gradle\caches\transforms-2\files-2.1\08507ac4b27fc40b830b69e0e2920c29\play-services-base-17.1.0\AndroidManifest.xml:25:13-37
-82            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-82-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\mazlan.nor\.gradle\caches\transforms-2\files-2.1\08507ac4b27fc40b830b69e0e2920c29\play-services-base-17.1.0\AndroidManifest.xml:26:13-72
-83
-84        <provider
-84-->[com.google.firebase:firebase-common:19.1.0] C:\Users\mazlan.nor\.gradle\caches\transforms-2\files-2.1\a28e05924b86cd17d2fdaf21e1495f6d\firebase-common-19.1.0\AndroidManifest.xml:17:9-21:39
-85            android:name="com.google.firebase.provider.FirebaseInitProvider"
-85-->[com.google.firebase:firebase-common:19.1.0] C:\Users\mazlan.nor\.gradle\caches\transforms-2\files-2.1\a28e05924b86cd17d2fdaf21e1495f6d\firebase-common-19.1.0\AndroidManifest.xml:18:13-77
-86            android:authorities="my.mazlan.poslajutracking.firebaseinitprovider"
-86-->[com.google.firebase:firebase-common:19.1.0] C:\Users\mazlan.nor\.gradle\caches\transforms-2\files-2.1\a28e05924b86cd17d2fdaf21e1495f6d\firebase-common-19.1.0\AndroidManifest.xml:19:13-72
-87            android:exported="false"
-87-->[com.google.firebase:firebase-common:19.1.0] C:\Users\mazlan.nor\.gradle\caches\transforms-2\files-2.1\a28e05924b86cd17d2fdaf21e1495f6d\firebase-common-19.1.0\AndroidManifest.xml:20:13-37
-88            android:initOrder="100" />
-88-->[com.google.firebase:firebase-common:19.1.0] C:\Users\mazlan.nor\.gradle\caches\transforms-2\files-2.1\a28e05924b86cd17d2fdaf21e1495f6d\firebase-common-19.1.0\AndroidManifest.xml:21:13-36
-89
-90        <meta-data
-90-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\mazlan.nor\.gradle\caches\transforms-2\files-2.1\f2dd4a6acd048f4d65ab12e162a6b675\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
-91            android:name="com.google.android.gms.version"
-91-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\mazlan.nor\.gradle\caches\transforms-2\files-2.1\f2dd4a6acd048f4d65ab12e162a6b675\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
-92            android:value="@integer/google_play_services_version" />
-92-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\mazlan.nor\.gradle\caches\transforms-2\files-2.1\f2dd4a6acd048f4d65ab12e162a6b675\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
-93
-94        <activity
-94-->[:nativescript_barcodescanner:] C:\Users\mazlan.nor\.gradle\caches\transforms-2\files-2.1\9f2c1480a59902dab3793402b0e6fa78\nativescript_barcodescanner\AndroidManifest.xml:17:9-29:20
-95            android:name="com.google.zxing.client.android.CaptureActivity"
-95-->[:nativescript_barcodescanner:] C:\Users\mazlan.nor\.gradle\caches\transforms-2\files-2.1\9f2c1480a59902dab3793402b0e6fa78\nativescript_barcodescanner\AndroidManifest.xml:18:13-75
-96            android:clearTaskOnLaunch="true"
-96-->[:nativescript_barcodescanner:] C:\Users\mazlan.nor\.gradle\caches\transforms-2\files-2.1\9f2c1480a59902dab3793402b0e6fa78\nativescript_barcodescanner\AndroidManifest.xml:19:13-45
-97            android:configChanges="keyboardHidden|orientation|screenSize"
-97-->[:nativescript_barcodescanner:] C:\Users\mazlan.nor\.gradle\caches\transforms-2\files-2.1\9f2c1480a59902dab3793402b0e6fa78\nativescript_barcodescanner\AndroidManifest.xml:20:13-74
-98            android:exported="false"
-98-->[:nativescript_barcodescanner:] C:\Users\mazlan.nor\.gradle\caches\transforms-2\files-2.1\9f2c1480a59902dab3793402b0e6fa78\nativescript_barcodescanner\AndroidManifest.xml:21:13-37
-99            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
-99-->[:nativescript_barcodescanner:] C:\Users\mazlan.nor\.gradle\caches\transforms-2\files-2.1\9f2c1480a59902dab3793402b0e6fa78\nativescript_barcodescanner\AndroidManifest.xml:22:13-71
-100            android:windowSoftInputMode="stateAlwaysHidden" >
-100-->[:nativescript_barcodescanner:] C:\Users\mazlan.nor\.gradle\caches\transforms-2\files-2.1\9f2c1480a59902dab3793402b0e6fa78\nativescript_barcodescanner\AndroidManifest.xml:23:13-60
-101            <intent-filter>
-101-->[:nativescript_barcodescanner:] C:\Users\mazlan.nor\.gradle\caches\transforms-2\files-2.1\9f2c1480a59902dab3793402b0e6fa78\nativescript_barcodescanner\AndroidManifest.xml:24:13-28:29
-102                <action android:name="com.google.zxing.client.android.SCAN" />
-102-->[:nativescript_barcodescanner:] C:\Users\mazlan.nor\.gradle\caches\transforms-2\files-2.1\9f2c1480a59902dab3793402b0e6fa78\nativescript_barcodescanner\AndroidManifest.xml:25:17-79
-102-->[:nativescript_barcodescanner:] C:\Users\mazlan.nor\.gradle\caches\transforms-2\files-2.1\9f2c1480a59902dab3793402b0e6fa78\nativescript_barcodescanner\AndroidManifest.xml:25:25-76
-103
-104                <category android:name="android.intent.category.DEFAULT" />
-104-->[:nativescript_barcodescanner:] C:\Users\mazlan.nor\.gradle\caches\transforms-2\files-2.1\9f2c1480a59902dab3793402b0e6fa78\nativescript_barcodescanner\AndroidManifest.xml:27:17-76
-104-->[:nativescript_barcodescanner:] C:\Users\mazlan.nor\.gradle\caches\transforms-2\files-2.1\9f2c1480a59902dab3793402b0e6fa78\nativescript_barcodescanner\AndroidManifest.xml:27:27-73
-105            </intent-filter>
-106        </activity>
-107    </application>
-108
-109</manifest>
+35        android:hardwareAccelerated="false"
+35-->C:\Users\mazlan.nor\Desktop\nativescript\tns-pos\platforms\android\app\src\main\AndroidManifest.xml:8:223-258
+36        android:icon="@drawable/icon"
+36-->C:\Users\mazlan.nor\Desktop\nativescript\tns-pos\platforms\android\app\src\main\AndroidManifest.xml:8:92-121
+37        android:label="@string/app_name"
+37-->C:\Users\mazlan.nor\Desktop\nativescript\tns-pos\platforms\android\app\src\main\AndroidManifest.xml:8:122-154
+38        android:theme="@style/AppTheme"
+38-->C:\Users\mazlan.nor\Desktop\nativescript\tns-pos\platforms\android\app\src\main\AndroidManifest.xml:8:155-186
+39        android:usesCleartextTraffic="true" >
+39-->C:\Users\mazlan.nor\Desktop\nativescript\tns-pos\platforms\android\app\src\main\AndroidManifest.xml:8:187-222
+40        <meta-data
+40-->C:\Users\mazlan.nor\Desktop\nativescript\tns-pos\platforms\android\app\src\main\AndroidManifest.xml:9:9-134
+41            android:name="com.google.android.gms.ads.APPLICATION_ID"
+41-->C:\Users\mazlan.nor\Desktop\nativescript\tns-pos\platforms\android\app\src\main\AndroidManifest.xml:9:20-76
+42            android:value="ca-app-pub-8469816531943468/2647073559" />
+42-->C:\Users\mazlan.nor\Desktop\nativescript\tns-pos\platforms\android\app\src\main\AndroidManifest.xml:9:77-131
+43
+44        <activity
+44-->C:\Users\mazlan.nor\Desktop\nativescript\tns-pos\platforms\android\app\src\main\AndroidManifest.xml:10:9-16:20
+45            android:name="com.tns.NativeScriptActivity"
+45-->C:\Users\mazlan.nor\Desktop\nativescript\tns-pos\platforms\android\app\src\main\AndroidManifest.xml:10:19-62
+46            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|smallestScreenSize|screenLayout|locale|uiMode"
+46-->C:\Users\mazlan.nor\Desktop\nativescript\tns-pos\platforms\android\app\src\main\AndroidManifest.xml:10:109-225
+47            android:label="@string/title_activity_kimera"
+47-->C:\Users\mazlan.nor\Desktop\nativescript\tns-pos\platforms\android\app\src\main\AndroidManifest.xml:10:63-108
+48            android:theme="@style/LaunchScreenTheme" >
+48-->C:\Users\mazlan.nor\Desktop\nativescript\tns-pos\platforms\android\app\src\main\AndroidManifest.xml:10:226-266
+49            <meta-data
+49-->C:\Users\mazlan.nor\Desktop\nativescript\tns-pos\platforms\android\app\src\main\AndroidManifest.xml:11:13-96
+50                android:name="SET_THEME_ON_LAUNCH"
+50-->C:\Users\mazlan.nor\Desktop\nativescript\tns-pos\platforms\android\app\src\main\AndroidManifest.xml:11:24-58
+51                android:resource="@style/AppTheme" />
+51-->C:\Users\mazlan.nor\Desktop\nativescript\tns-pos\platforms\android\app\src\main\AndroidManifest.xml:11:59-93
+52
+53            <intent-filter>
+53-->C:\Users\mazlan.nor\Desktop\nativescript\tns-pos\platforms\android\app\src\main\AndroidManifest.xml:12:13-15:29
+54                <action android:name="android.intent.action.MAIN" />
+54-->C:\Users\mazlan.nor\Desktop\nativescript\tns-pos\platforms\android\app\src\main\AndroidManifest.xml:13:17-69
+54-->C:\Users\mazlan.nor\Desktop\nativescript\tns-pos\platforms\android\app\src\main\AndroidManifest.xml:13:25-66
+55
+56                <category android:name="android.intent.category.LAUNCHER" />
+56-->C:\Users\mazlan.nor\Desktop\nativescript\tns-pos\platforms\android\app\src\main\AndroidManifest.xml:14:17-77
+56-->C:\Users\mazlan.nor\Desktop\nativescript\tns-pos\platforms\android\app\src\main\AndroidManifest.xml:14:27-74
+57            </intent-filter>
+58        </activity>
+59        <activity android:name="com.tns.ErrorReportActivity" />
+59-->C:\Users\mazlan.nor\Desktop\nativescript\tns-pos\platforms\android\app\src\main\AndroidManifest.xml:17:9-64
+59-->C:\Users\mazlan.nor\Desktop\nativescript\tns-pos\platforms\android\app\src\main\AndroidManifest.xml:17:19-61
+60        <activity
+60-->[com.google.firebase:firebase-auth:19.0.0] C:\Users\mazlan.nor\.gradle\caches\transforms-2\files-2.1\d09c7bbb719d28d2660e26d346f5a700\firebase-auth-19.0.0\AndroidManifest.xml:24:9-31:50
+61            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
+61-->[com.google.firebase:firebase-auth:19.0.0] C:\Users\mazlan.nor\.gradle\caches\transforms-2\files-2.1\d09c7bbb719d28d2660e26d346f5a700\firebase-auth-19.0.0\AndroidManifest.xml:25:13-85
+62            android:excludeFromRecents="true"
+62-->[com.google.firebase:firebase-auth:19.0.0] C:\Users\mazlan.nor\.gradle\caches\transforms-2\files-2.1\d09c7bbb719d28d2660e26d346f5a700\firebase-auth-19.0.0\AndroidManifest.xml:26:13-46
+63            android:exported="true"
+63-->[com.google.firebase:firebase-auth:19.0.0] C:\Users\mazlan.nor\.gradle\caches\transforms-2\files-2.1\d09c7bbb719d28d2660e26d346f5a700\firebase-auth-19.0.0\AndroidManifest.xml:27:13-36
+64            android:launchMode="singleTask"
+64-->[com.google.firebase:firebase-auth:19.0.0] C:\Users\mazlan.nor\.gradle\caches\transforms-2\files-2.1\d09c7bbb719d28d2660e26d346f5a700\firebase-auth-19.0.0\AndroidManifest.xml:28:13-44
+65            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
+65-->[com.google.firebase:firebase-auth:19.0.0] C:\Users\mazlan.nor\.gradle\caches\transforms-2\files-2.1\d09c7bbb719d28d2660e26d346f5a700\firebase-auth-19.0.0\AndroidManifest.xml:29:13-102
+66            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+66-->[com.google.firebase:firebase-auth:19.0.0] C:\Users\mazlan.nor\.gradle\caches\transforms-2\files-2.1\d09c7bbb719d28d2660e26d346f5a700\firebase-auth-19.0.0\AndroidManifest.xml:30:13-72
+67
+68        <service
+68-->[com.google.firebase:firebase-auth:19.0.0] C:\Users\mazlan.nor\.gradle\caches\transforms-2\files-2.1\d09c7bbb719d28d2660e26d346f5a700\firebase-auth-19.0.0\AndroidManifest.xml:33:9-39:19
+69            android:name="com.google.firebase.components.ComponentDiscoveryService"
+69-->[com.google.firebase:firebase-auth:19.0.0] C:\Users\mazlan.nor\.gradle\caches\transforms-2\files-2.1\d09c7bbb719d28d2660e26d346f5a700\firebase-auth-19.0.0\AndroidManifest.xml:34:13-84
+70            android:directBootAware="true"
+70-->[com.google.firebase:firebase-common:19.1.0] C:\Users\mazlan.nor\.gradle\caches\transforms-2\files-2.1\a28e05924b86cd17d2fdaf21e1495f6d\firebase-common-19.1.0\AndroidManifest.xml:14:13-43
+71            android:exported="false" >
+71-->[com.google.firebase:firebase-auth:19.0.0] C:\Users\mazlan.nor\.gradle\caches\transforms-2\files-2.1\d09c7bbb719d28d2660e26d346f5a700\firebase-auth-19.0.0\AndroidManifest.xml:35:13-37
+72            <meta-data
+72-->[com.google.firebase:firebase-auth:19.0.0] C:\Users\mazlan.nor\.gradle\caches\transforms-2\files-2.1\d09c7bbb719d28d2660e26d346f5a700\firebase-auth-19.0.0\AndroidManifest.xml:36:13-38:85
+73                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+73-->[com.google.firebase:firebase-auth:19.0.0] C:\Users\mazlan.nor\.gradle\caches\transforms-2\files-2.1\d09c7bbb719d28d2660e26d346f5a700\firebase-auth-19.0.0\AndroidManifest.xml:37:17-109
+74                android:value="com.google.firebase.components.ComponentRegistrar" />
+74-->[com.google.firebase:firebase-auth:19.0.0] C:\Users\mazlan.nor\.gradle\caches\transforms-2\files-2.1\d09c7bbb719d28d2660e26d346f5a700\firebase-auth-19.0.0\AndroidManifest.xml:38:17-82
+75            <meta-data
+75-->[com.google.firebase:firebase-firestore:21.1.1] C:\Users\mazlan.nor\.gradle\caches\transforms-2\files-2.1\254613f88fd5fee60f351a77a04392f3\jetified-firebase-firestore-21.1.1\AndroidManifest.xml:20:13-22:85
+76                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+76-->[com.google.firebase:firebase-firestore:21.1.1] C:\Users\mazlan.nor\.gradle\caches\transforms-2\files-2.1\254613f88fd5fee60f351a77a04392f3\jetified-firebase-firestore-21.1.1\AndroidManifest.xml:21:17-111
+77                android:value="com.google.firebase.components.ComponentRegistrar" />
+77-->[com.google.firebase:firebase-firestore:21.1.1] C:\Users\mazlan.nor\.gradle\caches\transforms-2\files-2.1\254613f88fd5fee60f351a77a04392f3\jetified-firebase-firestore-21.1.1\AndroidManifest.xml:22:17-82
+78        </service>
+79
+80        <activity
+80-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\mazlan.nor\.gradle\caches\transforms-2\files-2.1\08507ac4b27fc40b830b69e0e2920c29\play-services-base-17.1.0\AndroidManifest.xml:23:9-26:75
+81            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+81-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\mazlan.nor\.gradle\caches\transforms-2\files-2.1\08507ac4b27fc40b830b69e0e2920c29\play-services-base-17.1.0\AndroidManifest.xml:24:13-79
+82            android:exported="false"
+82-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\mazlan.nor\.gradle\caches\transforms-2\files-2.1\08507ac4b27fc40b830b69e0e2920c29\play-services-base-17.1.0\AndroidManifest.xml:25:13-37
+83            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+83-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\mazlan.nor\.gradle\caches\transforms-2\files-2.1\08507ac4b27fc40b830b69e0e2920c29\play-services-base-17.1.0\AndroidManifest.xml:26:13-72
+84
+85        <provider
+85-->[com.google.firebase:firebase-common:19.1.0] C:\Users\mazlan.nor\.gradle\caches\transforms-2\files-2.1\a28e05924b86cd17d2fdaf21e1495f6d\firebase-common-19.1.0\AndroidManifest.xml:17:9-21:39
+86            android:name="com.google.firebase.provider.FirebaseInitProvider"
+86-->[com.google.firebase:firebase-common:19.1.0] C:\Users\mazlan.nor\.gradle\caches\transforms-2\files-2.1\a28e05924b86cd17d2fdaf21e1495f6d\firebase-common-19.1.0\AndroidManifest.xml:18:13-77
+87            android:authorities="my.mazlan.poslajutracking.firebaseinitprovider"
+87-->[com.google.firebase:firebase-common:19.1.0] C:\Users\mazlan.nor\.gradle\caches\transforms-2\files-2.1\a28e05924b86cd17d2fdaf21e1495f6d\firebase-common-19.1.0\AndroidManifest.xml:19:13-72
+88            android:exported="false"
+88-->[com.google.firebase:firebase-common:19.1.0] C:\Users\mazlan.nor\.gradle\caches\transforms-2\files-2.1\a28e05924b86cd17d2fdaf21e1495f6d\firebase-common-19.1.0\AndroidManifest.xml:20:13-37
+89            android:initOrder="100" />
+89-->[com.google.firebase:firebase-common:19.1.0] C:\Users\mazlan.nor\.gradle\caches\transforms-2\files-2.1\a28e05924b86cd17d2fdaf21e1495f6d\firebase-common-19.1.0\AndroidManifest.xml:21:13-36
+90
+91        <meta-data
+91-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\mazlan.nor\.gradle\caches\transforms-2\files-2.1\f2dd4a6acd048f4d65ab12e162a6b675\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+92            android:name="com.google.android.gms.version"
+92-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\mazlan.nor\.gradle\caches\transforms-2\files-2.1\f2dd4a6acd048f4d65ab12e162a6b675\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+93            android:value="@integer/google_play_services_version" />
+93-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\mazlan.nor\.gradle\caches\transforms-2\files-2.1\f2dd4a6acd048f4d65ab12e162a6b675\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+94
+95        <activity
+95-->[:nativescript_barcodescanner:] C:\Users\mazlan.nor\.gradle\caches\transforms-2\files-2.1\9f2c1480a59902dab3793402b0e6fa78\nativescript_barcodescanner\AndroidManifest.xml:17:9-29:20
+96            android:name="com.google.zxing.client.android.CaptureActivity"
+96-->[:nativescript_barcodescanner:] C:\Users\mazlan.nor\.gradle\caches\transforms-2\files-2.1\9f2c1480a59902dab3793402b0e6fa78\nativescript_barcodescanner\AndroidManifest.xml:18:13-75
+97            android:clearTaskOnLaunch="true"
+97-->[:nativescript_barcodescanner:] C:\Users\mazlan.nor\.gradle\caches\transforms-2\files-2.1\9f2c1480a59902dab3793402b0e6fa78\nativescript_barcodescanner\AndroidManifest.xml:19:13-45
+98            android:configChanges="keyboardHidden|orientation|screenSize"
+98-->[:nativescript_barcodescanner:] C:\Users\mazlan.nor\.gradle\caches\transforms-2\files-2.1\9f2c1480a59902dab3793402b0e6fa78\nativescript_barcodescanner\AndroidManifest.xml:20:13-74
+99            android:exported="false"
+99-->[:nativescript_barcodescanner:] C:\Users\mazlan.nor\.gradle\caches\transforms-2\files-2.1\9f2c1480a59902dab3793402b0e6fa78\nativescript_barcodescanner\AndroidManifest.xml:21:13-37
+100            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+100-->[:nativescript_barcodescanner:] C:\Users\mazlan.nor\.gradle\caches\transforms-2\files-2.1\9f2c1480a59902dab3793402b0e6fa78\nativescript_barcodescanner\AndroidManifest.xml:22:13-71
+101            android:windowSoftInputMode="stateAlwaysHidden" >
+101-->[:nativescript_barcodescanner:] C:\Users\mazlan.nor\.gradle\caches\transforms-2\files-2.1\9f2c1480a59902dab3793402b0e6fa78\nativescript_barcodescanner\AndroidManifest.xml:23:13-60
+102            <intent-filter>
+102-->[:nativescript_barcodescanner:] C:\Users\mazlan.nor\.gradle\caches\transforms-2\files-2.1\9f2c1480a59902dab3793402b0e6fa78\nativescript_barcodescanner\AndroidManifest.xml:24:13-28:29
+103                <action android:name="com.google.zxing.client.android.SCAN" />
+103-->[:nativescript_barcodescanner:] C:\Users\mazlan.nor\.gradle\caches\transforms-2\files-2.1\9f2c1480a59902dab3793402b0e6fa78\nativescript_barcodescanner\AndroidManifest.xml:25:17-79
+103-->[:nativescript_barcodescanner:] C:\Users\mazlan.nor\.gradle\caches\transforms-2\files-2.1\9f2c1480a59902dab3793402b0e6fa78\nativescript_barcodescanner\AndroidManifest.xml:25:25-76
+104
+105                <category android:name="android.intent.category.DEFAULT" />
+105-->[:nativescript_barcodescanner:] C:\Users\mazlan.nor\.gradle\caches\transforms-2\files-2.1\9f2c1480a59902dab3793402b0e6fa78\nativescript_barcodescanner\AndroidManifest.xml:27:17-76
+105-->[:nativescript_barcodescanner:] C:\Users\mazlan.nor\.gradle\caches\transforms-2\files-2.1\9f2c1480a59902dab3793402b0e6fa78\nativescript_barcodescanner\AndroidManifest.xml:27:27-73
+106            </intent-filter>
+107        </activity>
+108    </application>
+109
+110</manifest>

@@ -7,13 +7,12 @@
 
 .search {
   background-color: white;
-  //margin-left: 10;
-  //margin-right: 10;
+  margin-left: 10;
+  margin-right: 10;
 }
 
 RadListView {
-  //width: 100%;
-  //height: 100%;
+  background-color: red;
 
   .labelTitle {
     font-size: 14;
@@ -28,16 +27,7 @@ RadListView {
 .item-stack {
   border-radius: 10;
   margin: 10;
-  padding: 20
-}
-
-#btnFab {
-  width: 56;
-  height: 56;
-  margin: 10;
-  border-radius: 28;
-  background-color: orangered;
-  color: white;
+  padding: 20;
 }
 
 .fab-button {
@@ -45,7 +35,7 @@ RadListView {
   height: 56;
   margin: 15;
   font-size: 7;
-  background-color: #ff4081;
+  background-color: #5d54ff;
   horizontal-align: right;
   vertical-align: bottom;
 }

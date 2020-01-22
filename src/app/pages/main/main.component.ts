@@ -361,6 +361,7 @@ export const DATAITEMS: DataItem[] = [
 })
 export class MainComponent implements OnInit {
     _dataItems: ObservableArray<DataItem>;
+    _dataItems2 = DATAITEMS;
     url: any;
     
     constructor(
@@ -370,9 +371,11 @@ export class MainComponent implements OnInit {
     
     ngOnInit(): void {
         this._dataItems = new ObservableArray(DATAITEMS);
-        
-        firebase.init({});
-        this.initFirebase();
+            this.initFirebase();
+    
+        // firebase.init({}).then(res => {
+        //     console.log('success');
+        // });
     }
     
     async initFirebase() {
@@ -382,7 +385,7 @@ export class MainComponent implements OnInit {
                 querySnapshot.forEach(doc => {
                     const api: firestore.DocumentData = doc.data();
                     this.url = JSON.parse(api.url);
-                    console.log("api :", JSON.parse(api.url));
+                    console.log("api server:", JSON.parse(api.url));
                 });
             });
         } catch (err) {
@@ -431,13 +434,13 @@ export class MainComponent implements OnInit {
     public onItemSelected(args: any) {
         console.log("args :", args);
         
-        this.routerExtensions.navigate(["/progress-detail"], {
-            transition: {
-                name: "slideLeft",
-                curve:'ease'
-            },
-            queryParams: args
-        });
+        // this.routerExtensions.navigate(["/progress-detail"], {
+        //     transition: {
+        //         name: "slideLeft",
+        //         curve:'ease'
+        //     },
+        //     queryParams: args
+        // });
     }
     
     onTapFab() {

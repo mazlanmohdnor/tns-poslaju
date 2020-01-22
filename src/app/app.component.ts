@@ -34,7 +34,7 @@ export class AppComponent implements OnInit {
             apiCollection.get({ source: "server" }).then(querySnapshot => {
                 querySnapshot.forEach(doc => {
                     const api: firestore.DocumentData = doc.data();
-                    console.log("api :", JSON.parse(api.url));
+                    console.log("api server :", JSON.parse(api.url));
                 });
             });
         } catch (err) {

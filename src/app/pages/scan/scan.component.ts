@@ -18,7 +18,7 @@ import { PosLajuService } from "~/app/shared/services/pos-backend/pos-laju.servi
     `]
 })
 export class ScanComponent implements OnInit {
-    public trackingNumber: string = "308000505679"; // 8050169956
+    public trackingNumber: string = "ERB136623742MY"; // 8050169956
     
     constructor(
         private bottomSheet: BottomSheetService,
@@ -92,10 +92,10 @@ export class ScanComponent implements OnInit {
     
     public onTapTrack($event) {
         console.log("tap");
-        this.posService.getDetailBrowser(this.trackingNumber).subscribe(result => {
-            console.log("result :", result);
-        });
-        getJSON("http://cj-api.herokuapp.com/cj/308000505679").then((result: any) => {
+        // this.posService.getDetailBrowser(this.trackingNumber).subscribe(result => {
+        //     console.log("result :", result);
+        // });
+        getJSON("http://cj-api.herokuapp.com/poslaju/ERB136623742MY").then((result: any) => {
             console.log("result :", result);
             this.routerExtensions.navigate(["/progress-detail"], {
                 transition: {
@@ -110,6 +110,41 @@ export class ScanComponent implements OnInit {
         }, (e) => {
             console.log("e :", e);
         });
+        
+        // request({
+        //     url: "https://mobile-app.pos.com.my/API/POSApiService.svc",
+        //     method: "POST",
+        //     headers: {
+        //         "Content-Type": "application/json",
+        //         "SOAPAction": "	http://tempuri.org/IPOSApiService/GetTrackNTraceWebApi	HEADER	METHOD",
+        //         "Host": "mobile-app.pos.com.my"
+        //     },
+        //     content: `<v:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:d="http://www.w3.org/2001/XMLSchema" xmlns:c="http://schemas.xmlsoap.org/soap/encoding/" xmlns:v="http://schemas.xmlsoap.org/soap/envelope/">
+        //                 <v:Header />
+        //                 <v:Body>
+        //                     <GetTrackNTraceWebApi xmlns="http://tempuri.org/" id="o0" c:root="1">
+        //                         <cnno i:type="d:string">ERB136623742MY</cnno>
+        //                         <cultureCode i:type="d:string">En</cultureCode>
+        //                     </GetTrackNTraceWebApi>
+        //                 </v:Body>
+        //             </v:Envelope>`
+        // }).then(function(response) {
+        //     console.log("response :", response);
+        //     const result = response.content.toJSON();
+        //     console.log("result :", result);
+        //     try {
+        //         var doc = new dom().parseFromString(result["data"],  "text/xml" );
+        //     } catch (e) {
+        //         console.log("parsing error " + e);
+        //     }
+        //
+        //     console.log("Parsed! " + doc);
+        //     console.log("Parsed! " + doc);
+        //     var select = Xpath.useNamespaces({
+        //         "envlp": "http://schemas.xmlsoap.org/soap/envelope/",
+        //         "lg":"http://test.com"
+        //     });
+        // });
     }
     
     goBack(): void {
